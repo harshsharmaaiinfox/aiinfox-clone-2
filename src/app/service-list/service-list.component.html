@@ -1,0 +1,38 @@
+<section class="service-section">
+    <div class="container service-three">
+      <div class="section-title">
+        <span class="sub-title">
+          <img src="assets/img/star-icon.png" alt="AI Services"> Our Services
+        </span>
+        <h2>We Offer Professional Solutions For Business</h2>
+        <p>We are constantly working with a vision in mind to transform the power of Artificial Intelligence for an enhanced future.</p>
+      </div>
+  
+      <div class="bottom">
+        <div *ngFor="let service of services; let i = index" class="box" [ngClass]="{ 'start': i === 0, 'end': i === services.length - 1 }">
+          <div class="col-lg-2">
+            <span>{{ service.id }}</span>
+          </div>
+          <div class="col-lg-5">
+            <img [src]="service.icon" [alt]="service.title" class="service-img">
+            <span>{{ service.title }}</span>
+          </div>
+          <div class="col-lg-5">
+            <p>{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="circle-shape2">
+      <img src="assets/img/shape/circle-shape2.png" alt="AI services in Mohali">
+    </div>
+    <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </section>
+  

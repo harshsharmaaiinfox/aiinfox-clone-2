@@ -1,0 +1,114 @@
+
+<section class="we-serve">
+
+<div class="section-head text-center mb-5">
+    <h2>AI Development Technologies and Tools
+    </h2>
+    <p>Stay ahead of the curve with our expertise in cutting-edge technologies, including AI, Machine Learning, Data Analytics, and<br> more.</p>
+</div>
+    <!-- SLIDER -->
+
+
+
+
+
+    <div class="slider-container">
+        <div class="slider-track" [style.transform]="getTransformStyle()">
+          <div class="slide" *ngFor="let icon of icons">
+            <div class="icon-card">
+              <img [src]="icon.img" [alt]="icon.name" />
+              <p>{{ icon.name }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pagination Dots -->
+      <div class="dots">
+        <span
+        *ngFor="let dot of [].constructor(totalSlides); let i = index"
+          class="dot"
+          [class.active]="i === currentIndex"
+          (click)="goToSlide(i)"
+        ></span>
+      </div>
+
+      
+
+      <!-- SLIDER END -->
+
+
+<div class="section-head-bottom text-center">
+    <h2>Our cases and testimonials from delighted clients</h2>
+</div>
+
+        <div class="container con-1">
+            <div class="content">
+                <div class="logo">Twilio Chatbot</div>
+                <div class="tags">
+                    <span>Communication </span>
+                    <span>AI </span>
+                    <span>Automation</span>
+                </div>
+                <div class="headline">We developed an intelligent SMS automation solution leveraging Twilio, Flask, HubSpot, and OpenAI to enhance customer interactions, automate responses, and streamline communication workflows.</div>
+                <p class="testimonial">“"Their expertise in integrating AI-driven SMS automation helped us optimize our customer engagement. The team ensured seamless implementation and proactively addressed challenges to meet our objectives.”</p>
+                <div class="author">
+                    <img src="../../assets/img/girl-aiinfox.png" alt="User">
+                    <div>
+                        <strong>Razvan Spatariu</strong><br>
+                        Senior Software Engineering Manager at Multiverse
+                    </div>
+                </div>
+            </div>
+            <div class="image-wrapper">
+                <img src="../../assets/img/girl-aiinfox.png" alt="Woman with laptop">
+            </div>
+        </div>
+
+
+        <div class="container con-2">
+            <div class="content">
+                <div class="logo">multiverse</div>
+                <div class="tags">
+                    <span>Edtech</span>
+                    <span>Training</span>
+                    <span>SaaS</span>
+                </div>
+                <div class="headline">We helped with developing comprehensive support solutions for internal processes and collaborative tools.</div>
+                <p class="testimonial">“Diffco supplied us with the skilled engineers we needed to meet our ambitious goals. Their account manager proactively addressed concerns, ensuring our expectations were met.”</p>
+                <div class="author">
+                    <img src="../../assets/img/girl-aiinfox.png" alt="User">
+                    <div>
+                        <strong>Razvan Spatariu</strong><br>
+                        Senior Software Engineering Manager at Multiverse
+                    </div>
+                </div>
+            </div>
+                <img src="../../assets/img/lock-2.png" alt="Woman with laptop">
+        </div>
+
+        <div class="container con-3">
+            <div class="content">
+                <div class="logo">multiverse</div>
+                <div class="tags">
+                    <span>Edtech</span>
+                    <span>Training</span>
+                    <span>SaaS</span>
+                </div>
+                <div class="headline">We helped with developing comprehensive support solutions for internal processes and collaborative tools.</div>
+                <p class="testimonial">“Diffco supplied us with the skilled engineers we needed to meet our ambitious goals. Their account manager proactively addressed concerns, ensuring our expectations were met.”</p>
+                <div class="author">
+                    <img src="../../assets/img/girl-aiinfox.png" alt="User">
+                    <div>
+                        <strong>Razvan Spatariu</strong><br>
+                        Senior Software Engineering Manager at Multiverse
+                    </div>
+                </div>
+            </div>
+           
+                <img src="../../assets/img/three-0.png" alt="Woman with laptop" class="my-image">
+           
+        </div>
+    
+    <div _ngcontent-ng-c116318799="" class="vector-shape11"><img _ngcontent-ng-c116318799="" src="/assets/img/vector-shape11.png" alt="image"></div>
+</section>

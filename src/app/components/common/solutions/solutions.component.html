@@ -1,0 +1,231 @@
+<!-- <section class="solutions-area pb-70">
+    <div class="container">
+        <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
+            <span class="sub-title"><img src="assets/img/star-icon.png" alt="Our Expertise"> {{sectionTitleContent.subTitle}}</span>
+            <h2>{{sectionTitleContent.title}}</h2>
+            <p>{{sectionTitleContent.paragraphText}}</p>
+        </div>
+        
+        <div class="row gx-4 my-row">
+            <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let solutionsBoxContent of singleSolutionsBox;">
+                <div class="single-solutions-box">
+                    <div class="icon">
+                        <img [src]="solutionsBoxContent.icon" alt={{solutionsBoxContent.alt}}>
+                      
+                    </div>
+                    <h3><a routerLink="/{{solutionsBoxContent.link}}">{{solutionsBoxContent.title}}</a></h3>
+                    <p>{{solutionsBoxContent.paragraphText}}</p>
+                    <a routerLink="/{{solutionsBoxContent.link}}" class="view-details-btn">{{solutionsBoxContent.linkText}}</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 solutions-box">
+                <div class="col-lg-8">
+                    <h2>Staff Augmentation</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores fuga cupiditate fugit blanditiis adipisci ipsam eaque culpa aperiam ipsum maxime, aliquam ab expedita?</p>
+                    <div class="col">
+                        <ul>
+                            <li>
+                                <a href="#">Cultural fit</a>
+                            </li>
+                            <li>
+                                <a href="#">Top 1%</a>
+                            </li>
+                            <li>
+                                <a href="#">Instant Hire</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../../../../assets/img/aiinfox-service.png" alt="Staff Augmentation">	
+                </div>
+            </div>
+            <div class="col-lg-6 solutions-box">
+                <div class="col-lg-8">
+                    <h2>Mobile Development
+                    </h2>
+                    <p>We specialize in developing native and cross-platform mobile applications for iOS and Android.
+
+                    </p>
+                    <div class="col">
+                        <ul>
+                           
+                            <li>
+                                <a href="#">React Native</a>
+                            </li>
+                            <li>
+                                <a href="#">Flutter</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../../../../assets/img/front-end-icon.svg" alt="Staff Augmentation">	
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 gx-4 my-row">
+           <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let solutionsBoxContent of singleSolutionsBox;">
+                <div class="single-solutions-box">
+                    <div class="icon">
+                        <img [src]="solutionsBoxContent.icon" alt={{solutionsBoxContent.alt}}>
+                      
+                    </div>
+                    <h3><a routerLink="/{{solutionsBoxContent.link}}">{{solutionsBoxContent.title}}</a></h3>
+                    <p>{{solutionsBoxContent.paragraphText}}</p>
+                    <a routerLink="/{{solutionsBoxContent.link}}" class="view-details-btn">{{solutionsBoxContent.linkText}}</a>
+                </div>
+            </div> 
+
+            <div class="col-lg-6 solutions-box">
+                <div class="col-lg-8">
+                    <h2>Back-end Development</h2>
+                    <p>We are experienced in high-load and complex backend infrastructure development for mobile or web apps and enterprise services.</p>
+                    <div class="col">
+                        <ul>
+                            <li>
+                                <a href="#">Node.js</a>
+                            </li>
+                            <li>
+                                <a href="#">Go</a>
+                            </li>
+                            <li>
+                                <a href="#"> Python,</a>
+                            </li>
+                            <li>
+                                <a href="#">C#</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../../../../assets/img/backend-icon.svg" alt="Staff Augmentation">	
+                </div>
+            </div>
+            <div class="col-lg-6 solutions-box">
+                <div class="col-lg-8">
+                    <h2>AI Development</h2>
+                    <p>Our team specializes in AI, data analysis, and machine learning. We integrate your products with leading AI models like OpenAI GPT, Anthropic, Azure AI, AutoGPT, LLAMA, Gemini, and more to streamline operations, enhance customer experiences, and drive market innovation.</p>
+                    <div class="col">
+                        <ul>
+                            <li>
+                                <a href="#">LLM</a>
+                            </li>
+                            <li>
+                                <a href="#">TensorFlow</a>
+                            </li>
+                            <li>
+                                <a href="#">Python</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../../../../assets/img/cat-icon.svg" alt="Staff Augmentation">	
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 g-4 my-row">
+           <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let solutionsBoxContent of singleSolutionsBox;">
+                <div class="single-solutions-box">
+                    <div class="icon">
+                        <img [src]="solutionsBoxContent.icon" alt={{solutionsBoxContent.alt}}>
+                      
+                    </div>
+                    <h3><a routerLink="/{{solutionsBoxContent.link}}">{{solutionsBoxContent.title}}</a></h3>
+                    <p>{{solutionsBoxContent.paragraphText}}</p>
+                    <a routerLink="/{{solutionsBoxContent.link}}" class="view-details-btn">{{solutionsBoxContent.linkText}}</a>
+                </div>
+            </div> 
+
+            <div class="col-lg-6 solutions-box">
+                <div class="col-lg-8">
+                    <h2>Front-end Development</h2>
+                    <p>We are experienced in building modular, high-performance web applications for corporate clients and startups. We utilize modern and robust technology stacks.</p>
+                    <div class="col">
+                        <ul>
+                            <li>
+                                <a href="#">React</a>
+                            </li>
+                            <li>
+                                <a href="#">Angular</a>
+                            </li>
+                            <li>
+                                <a href="#">Electron</a>
+                            </li>
+                            <li>
+                                <a href="#"> Next.js</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../../../../assets/img/mobile-icon.webp" alt="Staff Augmentation">	
+                </div>
+            </div>
+            <div class="col-lg-6 solutions-box">
+                <div class="col-lg-8">
+                    <h2>Web Development</h2>
+                    <p>Our developers can create web solutions that are tailored to your needs, easy to manage with popular CMS, and can be seamlessly integrated with your existing internal systems.</p>
+                    <div class="col">
+                        <ul>
+                            <li>
+                                <a href="#"> Contentful</a>
+                            </li>
+                            <li>
+                                <a href="#">Magento</a>
+                            </li>
+                            <li>
+                                <a href="#">WP</a>
+                            </li>
+                            <li>
+                                <a href="#">Shopify</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../../../../assets/img/web-icon.svg" alt="Staff Augmentation">	
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+<section class="solutions-area pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">
+                <img src="assets/img/star-icon.png" alt="Our Expertise"> 
+                {{ sectionTitle.subTitle }}
+            </span>
+            <h2>{{ sectionTitle.title }}</h2>
+            <p>{{ sectionTitle.paragraphText }}</p>
+        </div>
+
+        <div class="row gx-4 my-row">
+            <div class="col-lg-6 solutions-box" *ngFor="let service of services">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2>{{ service.title }}</h2>
+                        <p>{{ service.description }}</p>
+                        <div class="col">
+                            <ul>
+                                <li *ngFor="let feature of service.features">
+                                    <a>{{ feature }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-between align-items-center">
+                        <img [src]="service.image" [alt]="service.title">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

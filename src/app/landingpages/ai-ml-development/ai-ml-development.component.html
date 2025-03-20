@@ -1,0 +1,1112 @@
+<!-- Container -->
+<section class="about-area about-main-sec pb-100 mt-5 pt-5">
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 text-center pb-50">
+                <h1 class="bold">{{ aboutContent[0].title }}</h1>
+                <h3>{{ aboutContent[0].paragraphText1 }}</h3>
+            </div>
+
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <div class="about-content landingaboutcontent about-wrap-con">
+                    <div
+                        class="content w-100 max-none"
+                        *ngFor="let Content of aboutContent"
+                    >
+                        <ul class="features-list">
+                            <li
+                                class="feature-box mb-3"
+                                *ngFor="let List of featuresList"
+                            >
+                                <span
+                                    class="d-flex align-items-center justify-content-center"
+                                >
+                                    <div class="icon">
+                                        <img [src]="List.icon" alt="image" />
+                                    </div>
+                                    <h3 class="ms-2">{{ List.title }}</h3>
+                                </span>
+                            </li>
+                        </ul>
+                        <section class=" feature-box-btn row text-center mt-4">
+                            <div
+                                class="feature-box col-6 col-lg-6 col-md-6 col-sm-12 py-2"
+                            >
+                                <span
+                                    class="d-flex align-items-center justify-content-center h-100"
+                                >
+                                    <div class="icon">
+                                        <img
+                                            [src]="featuresList[0].icon"
+                                            alt="image"
+                                        />
+                                    </div>
+                                    <h3 class="ms-2">100% Confidential</h3>
+                                </span>
+                            </div>
+                            <div
+                                class="feature-box col-6 col-lg-6 col-md-6 col-sm-12 py-2"
+                            >
+                                <span
+                                    class="d-flex align-items-center justify-content-center h-100"
+                                >
+                                    <div class="icon">
+                                        <img
+                                            [src]="featuresList[1].icon"
+                                            alt="image"
+                                        />
+                                    </div>
+                                    <h3 class="ms-2">We Sign NDA</h3>
+                                </span>
+                            </div>
+                        </section>
+                        <section
+                            class="row align-items-center mt-4 book-btn-padding"
+                        >
+                            <a
+                                class="default-btn col-12 col-lg-12 col-sm-12 col-md-12 align-items-center py-3 fontbtnlarge"
+                                href="tel:+919988339877"
+                            >
+                                <i class="{{ Content.defaultBtnIcon }}"></i>
+                                {{ Content.defaultBtnText }}<span></span>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-sm-12 col-md-12">
+                <div class="contact-form contact">
+                    <form
+                        id="contactForm"
+                        [formGroup]="contactForm"
+                        (ngSubmit)="onSend()"
+                    >
+                        <div class="row">
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group mb-3">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        class="form-control"
+                                        id="name"
+                                        placeholder="Your name"
+                                        formControlName="name"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group mb-3">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="Your email address"
+                                        formControlName="email"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-3">
+                                    <input
+                                        type="text"
+                                        name="phone_number"
+                                        class="form-control"
+                                        id="phone_number"
+                                        placeholder="Your phone number"
+                                        formControlName="phoneNumber"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-3">
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                        class="form-control"
+                                        cols="30"
+                                        rows="6"
+                                        placeholder="Write your Query..."
+                                        formControlName="message"
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-12 col-md-12 d-flex align-items-center">
+                                <button type="submit" class="default-btn btn-lg me-3 fontbtnlarge text-center">
+                                    <i class="flaticon-tick"></i>Send Your Query<span></span>
+                                </button>
+                                <br>
+                                <div>
+                                    <small class="me-3">Or, email us your needs at</small>
+                                </div>
+                                <h3><a href="mailto:info@aiinfox.com"><u>info&#64;aiinfox.com</u></a></h3>
+                            </div> -->
+
+                            <div
+                                class="d-flex justify-content-center align-items-center mt-4"
+                            >
+                                <button
+                                    type="submit"
+                                    class="default-btn btn-lg fontbtnlarge text-center"
+                                    style="width: 100%"
+                                >
+                                    Send<span></span>
+                                </button>
+                            </div>
+                            <!-- <small class="me-1">Or, email us at</small>
+                                    <h4><a href="mailto:info@aiinfox.com"><u>info&#64;aiinfox.com</u></a></h4> -->
+                            <!-- <div class="col-lg-12 col-md-12 d-flex align-items-center">
+                                    
+                                </div> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="circle-shape1">
+        <img src="assets/img/shape/circle-shape1.png" alt="image" />
+    </div>
+</section>
+<!-- ./Container -->
+<!-- Container -->
+<section class="about-area about-area-wrap pb-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 text-center">
+                <h1 class="bold">India's Highest Rated Development Company</h1>
+                <h3>
+                    300+ Glowing 5-Star Reviews Across Top B2B Review Platforms
+                </h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="single-process-box ratingbox align-items-center">
+                    <div class="imgwrap">
+                        <img
+                            class="vectorlogo"
+                            src="https://vectorlogoseek.com/wp-content/uploads/2019/10/clutch-co-vector-logo.png"
+                            alt="Clutch"
+                        />
+                    </div>
+                    <img
+                        src="./assets/img/pngtree-5-stars-star-vector-icon-png-image_4592702.png"
+                        alt="5 Star Rating"
+                    />
+                    <h3 class="bold">4.9</h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="single-process-box ratingbox align-items-center">
+                    <div class="imgwrap">
+                        <img
+                            class="vectorlogo"
+                            src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                            alt="Clutch"
+                        />
+                    </div>
+                    <img
+                        src="./assets/img/pngtree-5-stars-star-vector-icon-png-image_4592702.png"
+                        alt="5 Star Rating"
+                    />
+                    <h3 class="bold">4.9</h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="single-process-box ratingbox align-items-center">
+                    <div class="imgwrap">
+                        <img
+                            class="vectorlogo"
+                            src="data:image/png;base64,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"
+                            alt="Clutch"
+                        />
+                    </div>
+                    <img
+                        src="./assets/img/pngtree-5-stars-star-vector-icon-png-image_4592702.png"
+                        alt="5 Star Rating"
+                    />
+                    <h3 class="bold">4.9</h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="single-process-box ratingbox align-items-center">
+                    <div class="imgwrap">
+                        <img
+                            class="vectorlogo"
+                            src="data:image/png;base64,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"
+                            alt="Clutch"
+                        />
+                    </div>
+                    <img
+                        src="./assets/img/pngtree-5-stars-star-vector-icon-png-image_4592702.png"
+                        alt="5 Star Rating"
+                    />
+                    <h3 class="bold">4.9</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./Container -->
+<!-- Container -->
+<section class="about-area our-solution-sec bg-f1f8fb" #Services>
+    <div class="container">
+        <div class="row align-items-center">
+            <section class="services-area service-area-wrap ptb-100">
+                <div class="container">
+                    <div
+                        class="section-title"
+                        *ngFor="let sectionTitleContent of sectionTitle"
+                    >
+                        <span class="sub-title"
+                            ><img src="assets/img/star-icon.png" alt="image" />
+                            Our Solutions</span
+                        >
+                        <h1 class="bold">
+                            Unleash AI/ML Power for Your Business: Grow Faster,
+                            Smarter, Stronger
+                        </h1>
+                        <h3>
+                            Build cutting-edge AI/ML apps with expert
+                            developers, affordably.
+                        </h3>
+                    </div>
+
+                    <!-- Accord -->
+                    <section class="faq-area faq-wrap pb-100">
+                        <div class="container">
+                            <div class="faq-accordion row align-items-start mb-2">
+                                <ul
+                                    class="accordion row col-6 col-sm-6 col-md-6"
+                                >
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div
+                                            class="accordion-item"
+                                            [ngClass]="{
+                                                accordionItemsIdx:
+                                                    accordionItems[0]
+                                            }"
+                                        >
+                                            <a
+                                                class="accordion-title"
+                                                href="javascript:void(0)"
+                                                (click)="accordionItemsClick(0)"
+                                            >
+                                                <i
+                                                    class="bx bx-chevron-down"
+                                                    [ngClass]="{
+                                                        'bx-chevron-up':
+                                                            accordionItems[0]
+                                                    }"
+                                                ></i>
+                                                {{ singleServicesBox[0].title }}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    {{
+                                                        singleServicesBox[0]
+                                                            .paragraphText
+                                                    }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div
+                                            class="accordion-item"
+                                            [ngClass]="{
+                                                accordionItemsIdx:
+                                                    accordionItems[1]
+                                            }"
+                                        >
+                                            <a
+                                                class="accordion-title"
+                                                href="javascript:void(0)"
+                                                (click)="accordionItemsClick(1)"
+                                            >
+                                                <i
+                                                    class="bx bx-chevron-down"
+                                                    [ngClass]="{
+                                                        'bx-chevron-up':
+                                                            accordionItems[1]
+                                                    }"
+                                                ></i>
+                                                {{ singleServicesBox[1].title }}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    {{
+                                                        singleServicesBox[1]
+                                                            .paragraphText
+                                                    }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div
+                                            class="accordion-item"
+                                            [ngClass]="{
+                                                accordionItemsIdx:
+                                                    accordionItems[2]
+                                            }"
+                                        >
+                                            <a
+                                                class="accordion-title"
+                                                href="javascript:void(0)"
+                                                (click)="accordionItemsClick(2)"
+                                            >
+                                                <i
+                                                    class="bx bx-chevron-down"
+                                                    [ngClass]="{
+                                                        'bx-chevron-up':
+                                                            accordionItems[2]
+                                                    }"
+                                                ></i>
+                                                {{ singleServicesBox[2].title }}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    {{
+                                                        singleServicesBox[2]
+                                                            .paragraphText
+                                                    }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul
+                                    class="accordion row col-6 col-sm-6 col-md-6"
+                                >
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div
+                                            class="accordion-item"
+                                            [ngClass]="{
+                                                accordionItemsIdx:
+                                                    accordionItems[3]
+                                            }"
+                                        >
+                                            <a
+                                                class="accordion-title"
+                                                href="javascript:void(0)"
+                                                (click)="accordionItemsClick(3)"
+                                            >
+                                                <i
+                                                    class="bx bx-chevron-down"
+                                                    [ngClass]="{
+                                                        'bx-chevron-up':
+                                                            accordionItems[3]
+                                                    }"
+                                                ></i>
+                                                {{ singleServicesBox[3].title }}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    {{
+                                                        singleServicesBox[3]
+                                                            .paragraphText
+                                                    }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div
+                                            class="accordion-item"
+                                            [ngClass]="{
+                                                accordionItemsIdx:
+                                                    accordionItems[4]
+                                            }"
+                                        >
+                                            <a
+                                                class="accordion-title"
+                                                href="javascript:void(0)"
+                                                (click)="accordionItemsClick(4)"
+                                            >
+                                                <i
+                                                    class="bx bx-chevron-down"
+                                                    [ngClass]="{
+                                                        'bx-chevron-up':
+                                                            accordionItems[4]
+                                                    }"
+                                                ></i>
+                                                {{ singleServicesBox[4].title }}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    {{
+                                                        singleServicesBox[4]
+                                                            .paragraphText
+                                                    }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div
+                                            class="accordion-item"
+                                            [ngClass]="{
+                                                accordionItemsIdx:
+                                                    accordionItems[5]
+                                            }"
+                                        >
+                                            <a
+                                                class="accordion-title"
+                                                href="javascript:void(0)"
+                                                (click)="accordionItemsClick(5)"
+                                            >
+                                                <i
+                                                    class="bx bx-chevron-down"
+                                                    [ngClass]="{
+                                                        'bx-chevron-up':
+                                                            accordionItems[5]
+                                                    }"
+                                                ></i>
+                                                {{ singleServicesBox[5].title }}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    {{
+                                                        singleServicesBox[5]
+                                                            .paragraphText
+                                                    }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul
+                                    class="accordion row col-6 col-sm-6 col-md-6"
+                                >
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div
+                                            class="accordion-item"
+                                            [ngClass]="{
+                                                accordionItemsIdx:
+                                                    accordionItems[6]
+                                            }"
+                                        >
+                                            <a
+                                                class="accordion-title"
+                                                href="javascript:void(0)"
+                                                (click)="accordionItemsClick(6)"
+                                            >
+                                                <i
+                                                    class="bx bx-chevron-down"
+                                                    [ngClass]="{
+                                                        'bx-chevron-up':
+                                                            accordionItems[6]
+                                                    }"
+                                                ></i>
+                                                {{ singleServicesBox[6].title }}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>
+                                                    {{
+                                                        singleServicesBox[6]
+                                                            .paragraphText
+                                                    }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[7]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(7)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[7]}"></i>
+                                                {{singleServicesBox[7].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[7].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li> -->
+                                    <!-- <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[8]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(8)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[8]}"></i>
+                                                {{singleServicesBox[8].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[8].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!--./Accord-->
+
+                    <section class="row align-items-center mb-3">
+                        <!-- <a class="default-btn col-6 fontbtnlarge " >
+                            <i class="{{aboutContent[0].defaultBtnIcon}}" ></i>
+                            {{aboutContent[0].defaultBtnText}}<span></span></a> -->
+                        <a
+                            class="default-btn col-6 align-items-center py-3 fontbtnlarge"
+                            href="tel:+919988339877"
+                        >
+                            <i class="{{ aboutContent[0].defaultBtnIcon }}"></i>
+                            {{ aboutContent[0].defaultBtnText }}<span></span>
+                        </a>
+                    </section>
+                </div>
+
+                <div class="circle-shape2">
+                    <img src="assets/img/shape/circle-shape2.png" alt="image" />
+                </div>
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<!--./Container-->
+<!--./Container -->
+<section class="about-area how-we-wrap pb-100 pt-100" #Engagement>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 text-center">
+                <h1 class="bold">How We Can Work With You</h1>
+                <h3>Flexible Engagements Tailored for Your Needs</h3>
+            </div>
+            <div class="col-lg-4 col-4 col-md-6 col-sm-12">
+                <div class="benefits-hrms work-with__box benefit-wrap">
+                    <img
+                        class="work-with__box--icon"
+                        src="./assets/img/hire-icon.svg"
+                        alt="Hire"
+                    />
+                    <h3>I want to hire your team for my project/s</h3>
+                    <section class="row align-items-center mt-5">
+                        <a
+                            class="default-btn col-12"
+                            (click)="onClickNextStep()"
+                        >
+                            <i class="{{ aboutContent[0].defaultBtnIcon }}"></i>
+                            TELL ME THE NEXT STEP<span></span
+                        ></a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-4 col-md-6 col-sm-12">
+                <div class="benefits-hrms work-with__box benefit-wrap">
+                    <img
+                        class="work-with__box--icon"
+                        src="./assets/img/fulltime.svg"
+                        alt="Hire"
+                    />
+                    <h3>
+                        I want to add Full-time AI/ML Specialist/s to my team
+                    </h3>
+                    <section class="row align-items-center mt-5">
+                        <a
+                            class="default-btn col-12"
+                            (click)="onClickNextStep()"
+                        >
+                            <i class="{{ aboutContent[0].defaultBtnIcon }}"></i>
+                            TELL ME THE NEXT STEP<span></span
+                        ></a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-4 col-md-6 col-sm-12">
+                <div class="benefits-hrms work-with__box benefit-wrap">
+                    <img
+                        class="work-with__box--icon"
+                        src="./assets/img/adhoc.svg"
+                        alt="Hire"
+                    />
+                    <h3>I have ad-hoc requirements and want to pay hourly</h3>
+                    <section class="row align-items-center mt-5">
+                        <a
+                            class="default-btn col-12"
+                            (click)="onClickNextStep()"
+                        >
+                            <i class="{{ aboutContent[0].defaultBtnIcon }}"></i>
+                            TELL ME THE NEXT STEP<span></span
+                        ></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--./Container -->
+<!-- Container -->
+<section class="about-area pb-100 pt-100" #Free>
+    <app-project-start
+        [section]="'takeTheFirstStep'"
+        (clickTrialButton)="clickTrialButton()"
+    ></app-project-start>
+</section>
+<!-- ./Container -->
+<!--./Container -->
+<section class="about-area pb-100" #Why>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 text-center pb-30">
+                <h1 class="bold">
+                    More Reasons Why You Should Hire AI/ML Developers From
+                    Capital Numbers
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-sm-12 mb-5">
+                    <div
+                        class="benefits-hrms quickres d-flex align-items-center"
+                    >
+                        <img
+                            class="col-4"
+                            src="./assets/img/hire-icon.svg"
+                            alt="Hire"
+                        />
+                        <h5 class="col-8 nowrap">
+                            Quick onboarding of AI/ML <br />developers
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-sm-12 mb-5">
+                    <div
+                        class="benefits-hrms quickres d-flex align-items-center"
+                    >
+                        <img
+                            class="col-4"
+                            src="./assets/img/hire-icon.svg"
+                            alt="Hire"
+                        />
+                        <h5 class="col-8 nowrap">
+                            Save 50% monthly cost of <br />hiring
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-sm-12 mb-5">
+                    <div
+                        class="benefits-hrms quickres d-flex align-items-center"
+                    >
+                        <img
+                            class="col-4"
+                            src="./assets/img/hire-icon.svg"
+                            alt="Hire"
+                        />
+                        <h5 class="col-8 nowrap">
+                            Scale up and down your team <br />on-demand
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-sm-12 mb-5">
+                    <div
+                        class="benefits-hrms quickres d-flex align-items-center"
+                    >
+                        <img
+                            class="col-4"
+                            src="./assets/img/hire-icon.svg"
+                            alt="Hire"
+                        />
+                        <h5 class="col-8 nowrap">Hire top 1% AI/ML talents</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-sm-12 mb-5">
+                    <div
+                        class="benefits-hrms quickres d-flex align-items-center"
+                    >
+                        <img
+                            class="col-4"
+                            src="./assets/img/hire-icon.svg"
+                            alt="Hire"
+                        />
+                        <h5 class="col-8 nowrap">
+                            ISO 9001 & ISO 27001 <br />certified quality
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-sm-12 mb-5">
+                    <div
+                        class="benefits-hrms quickres d-flex align-items-center"
+                    >
+                        <img
+                            class="col-4"
+                            src="./assets/img/hire-icon.svg"
+                            alt="Hire"
+                        />
+                        <h5 class="col-8 nowrap">
+                            Hire the best from our <br />500+ professionals
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--./Container -->
+<!-- Container -->
+<section class="case-study-area bg-fffbf5 testimonial-wrap-sec">
+    <div class="row align-items-center pt-100">
+        <div class="col-12 text-center">
+            <h1 class="bold">300+ Glowing Customer Reviews</h1>
+            <h2>
+                97 Out Of 100 Clients Have Given Us A Five Star Rating On Google
+                & Clutch
+            </h2>
+        </div>
+    </div>
+    <div class="case-study-slides owl-carousel owl-theme">
+        <div
+            class="single-case-study-item ptb-100"
+            *ngFor="let singleCaseStudyItemContent of singleCaseStudyItem"
+        >
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="case-study-content">
+                            <h2>{{ singleCaseStudyItemContent.title }}</h2>
+                            <p class="bold">
+                                {{ singleCaseStudyItemContent.paragraphText1 }}
+                            </p>
+                            <p>
+                                {{ singleCaseStudyItemContent.paragraphText2 }}
+                            </p>
+                            <a
+                                class="default-btn fontbtnlarge detailMoreButton"
+                                (click)="onClickDetails()"
+                                ><i
+                                    class="{{
+                                        singleCaseStudyItemContent.linkIcon
+                                    }}"
+                                ></i
+                                >{{ singleCaseStudyItemContent.linkText
+                                }}<span></span
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="case-study-image">
+                            <a class="d-block"
+                                ><img
+                                    [src]="singleCaseStudyItemContent.img"
+                                    alt="image"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./Container -->
+<!-- Container -->
+<section class="contact-area pb-100 pt-100" #contactFormSection>
+    <div class="container-fluid">
+        <div
+            class="section-title mb-3"
+            *ngFor="let sectionTitleContent of sectionTitleContact"
+        >
+            <span class="sub-title"
+                ><img src="assets/img/star-icon.png" alt="image" />
+                {{ sectionTitleContent.subTitle }}</span
+            >
+            <h1 class="bold">{{ sectionTitleContent.title }}</h1>
+            <!-- <h4>{{sectionTitleContent.paragraphText}}</h4> -->
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column">
+                <!-- <div class="contact-image" *ngFor="let Image of contactImage;">
+                    <img [src]="Image.img" alt="image">
+                </div> -->
+                <section class="history-area bg-fafafb pt-3 pb-30">
+                    <div class="container">
+                        <div
+                            class="section-title"
+                            *ngFor="
+                                let sectionTitleContent of sectionTitleHistory
+                            "
+                        >
+                            <span class="sub-title"
+                                ><img
+                                    src="assets/img/star-icon.png"
+                                    alt="image"
+                                />
+                                {{ sectionTitleContent.subTitle }}</span
+                            >
+                            <!-- <h2>{{sectionTitleContent.title}}</h2> -->
+                            <p>{{ sectionTitleContent.paragraphText }}</p>
+                        </div>
+
+                        <ol class="timeline history-timeline">
+                            <li
+                                class="timeline-block"
+                                *ngFor="let TimelineBlock of historyTimeline"
+                            >
+                                <div class="timeline-icon">
+                                    <span class="dot-badge"></span>
+                                </div>
+
+                                <div class="timeline-content">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="content">
+                                                <p>
+                                                    {{
+                                                        TimelineBlock.paragraphText
+                                                    }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="contact-form contact-sec-wrap">
+                    <form
+                        id="contactForm"
+                        [formGroup]="contactForm"
+                        (ngSubmit)="onSend()"
+                    >
+                        <div class="row">
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group mb-3">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        class="form-control"
+                                        id="name"
+                                        placeholder="Your name"
+                                        formControlName="name"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group mb-3">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="Your email address"
+                                        formControlName="email"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-3">
+                                    <input
+                                        type="text"
+                                        name="phone_number"
+                                        class="form-control"
+                                        id="phone_number"
+                                        placeholder="Your phone number"
+                                        formControlName="phoneNumber"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-3">
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                        class="form-control"
+                                        cols="30"
+                                        rows="6"
+                                        placeholder="Write your Query..."
+                                        formControlName="message"
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center mt-2 mb-2"
+                            >
+                                <button
+                                    type="submit"
+                                    class="default-btn btn-lg fontbtnlarge text-center"
+                                    style="width: 100%"
+                                >
+                                    Send<span></span>
+                                </button>
+                            </div>
+                            <div
+                                class="col-lg-12 col-md-12 about-content mt-3 justify-content-center"
+                            >
+                                <div class="content text-center">
+                                    <ul
+                                        class="features-list listhalf text-center d-flex"
+                                    >
+                                        <li class="pe-0">
+                                            <span class="py-3">
+                                                <div class="icon">
+                                                    <img
+                                                        [src]="
+                                                            featuresList[0].icon
+                                                        "
+                                                        alt="image"
+                                                    />
+                                                </div>
+                                                <h3>100% confidential</h3>
+                                            </span>
+                                        </li>
+                                        <li class="pe-0">
+                                            <span class="py-3">
+                                                <div class="icon">
+                                                    <img
+                                                        [src]="
+                                                            featuresList[0].icon
+                                                        "
+                                                        alt="image"
+                                                    />
+                                                </div>
+                                                <h3>We sign NDA</h3>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./Container -->
+<!--./Container -->
+<section class="about-area pb-100 whyhirearea pt-70">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 text-center pb-30">
+                <h1 class="bold">Why Hire AI/ML Team from AiINFOX</h1>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-12 col-md-6 mb-5">
+                    <div class="benefits-hrms whyhire align-items-start d-flex">
+                        <img src="./assets/img/hire-icon.svg" alt="Hire" />
+                        <div>
+                            <h3>We Match Your Needs</h3>
+                            <p>
+                                By partnering with Capital Numbers,you'll get
+                                access to our 500+ in-house developers and will
+                                be able to fill any role immediately.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-12 col-md-6 mb-5">
+                    <div class="benefits-hrms whyhire align-items-start d-flex">
+                        <img src="./assets/img/hire-icon.svg" alt="Hire" />
+                        <div>
+                            <h3>You're in Control</h3>
+                            <p>
+                                You control your team's work,and all processes
+                                are fully transparent,so you know exactly who's
+                                doing what,when,and why.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-sm-12 col-md-6 mb-5">
+                    <div class="benefits-hrms whyhire align-items-start d-flex">
+                        <img src="./assets/img/hire-icon.svg" alt="Hire" />
+                        <div>
+                            <h3>Work with Experts</h3>
+                            <p>
+                                We'll help you hire dedicated developers with a
+                                deep understanding of backend, frontend, QA,
+                                DevOps, UI/UX, or DevOps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-12 col-md-6 mb-5">
+                    <div class="benefits-hrms whyhire align-items-start d-flex">
+                        <img src="./assets/img/hire-icon.svg" alt="Hire" />
+                        <div>
+                            <h3>Hassle-free production</h3>
+                            <p>
+                                Our HR specialists, office managers, and system
+                                administrators make sure your development team's
+                                working conditions are perfect.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-12 col-md-6 mb-5">
+                    <div class="benefits-hrms whyhire align-items-start d-flex">
+                        <img src="./assets/img/hire-icon.svg" alt="Hire" />
+                        <div>
+                            <h3>50% Cost reduction</h3>
+                            <p>
+                                Our clients have been able to save up to 50% in
+                                <br />labor costs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-12 col-md-6 mb-5">
+                    <div class="benefits-hrms whyhire align-items-start d-flex">
+                        <img src="./assets/img/hire-icon.svg" alt="Hire" />
+                        <div>
+                            <h3>Zero Overheads</h3>
+                            <p>
+                                Payroll, taxes, benefits, sick days, and
+                                vacations for your team - we've got you covered.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div
+                    class="col-lg-12 col-md-12 text-center d-flex flex-row align-items-center"
+                    style="justify-content: center"
+                >
+                    <a
+                        href="tel:+919988339877"
+                        class="default-btn me-3 fontbtnlarge bookButton"
+                    >
+                        <i class="bx bx-phone-call"></i>Book A Call<span
+                        ></span> </a
+                    ><small
+                        class="me-3 mt-2"
+                        href="javascript:void(0)"
+                        (click)="onClickNextStep()"
+                        ><a
+                            ><u
+                                >Or, Use this form to tell us about your
+                                needs</u
+                            ></a
+                        ></small
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--./Container -->

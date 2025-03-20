@@ -1,0 +1,49 @@
+.service-content h3
+{
+    margin: 25px 0px 12px 0px;
+}
+.ptb-40 {
+    padding: 40px 0px 0px;
+}
+.single-process-box
+{
+    margin-bottom: 30px;
+  background-color: var(--whiteColor);
+  transition: var(--transition);
+  border: 1px solid #f5f3f2;
+  border-radius: 5px;
+  padding: 0px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  }
+  .single-process-box img
+  {
+    border-radius: 5px 5px 0px 0px;
+  }
+  .single-process-box h3
+  {
+    padding: 20px 20px 0px;
+  }
+  .single-process-box p
+  {
+    padding: 0px 20px 20px;
+  }
+.single-process-box:hover
+{
+    border-color: var(--mainColor);
+
+}
+.midarea
+{
+    background: #fffcf7;
+    padding: 60px 0px;
+}
+.col-lg-4
+{
+    display: flex;
+}
+.midarea .image img {
+  max-width: 150px;
+  margin-top: 20px;
+}

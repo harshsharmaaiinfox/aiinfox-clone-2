@@ -1,0 +1,196 @@
+<section class="banner">
+    <div class="container-main">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center flex-column align-items-start">
+                <h1>WHAT IS AN TWILIO CHATBOT?</h1>
+                <p>In today’s fast-paced world, SMS communication remains a crucial touchpoint for businesses,
+                    especially when integrated with cutting-edge technologies like Twilio, Flask, and AI. This blog post
+                    delves into the seamless integration of these technologies to enhance SMS interactions, automate
+                    responses, and provide a robust platform for customer engagement.</p>
+                <button class="case-button">Get Started</button>
+            </div>
+            <div class="col-lg-6">
+                <img src="../../assets/img/twilio-chatbot.png" alt="banner-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="business-section">
+    <div class="container-main">
+        <div class="col-lg-12 d-flex justify-content-center ">
+            <div class="col-lg-8 text-center mx-auto head-content">
+                <h2> <img src="assets/img/star-icon.png" alt="About Our Company"> Setting Up Twilio For SMS Integration
+                </h2>
+                <p class="pt-3">
+                    Twilio provides a powerful platform for SMS communications, allowing businesses to send and receive
+                    messages globally.
+                </p>
+                <span>Setting up Twilio involves several steps</span>
+            </div>
+        </div>
+        <div class="container-card">
+            <div class="card">
+                <div class="heading">ACCESS THE TWILIO DASHBOARD</div>
+                <div class="description">Start by logging into your Twilio account where you can manage and view all
+                    your active services.</div>
+            </div>
+            <div class="card">
+                <div class="heading">MANAGE PHONE NUMBERS</div>
+                <div class="description">Within the Twilio console, you can select from active numbers or purchase new
+                    ones, depending on your needs.</div>
+            </div>
+            <div class="card">
+                <div class="heading">CONFIGURE WEBHOOKS</div>
+                <div class="description">For incoming messages, it’s essential to set up a webhook URL. This
+                    URL—pointing to your server—will handle the messages as they arrive. Make sure to set this to POST
+                    to ensure secure message reception.</div>
+            </div>
+            <p class="pt-4"><b>After configuring the webhook</b>, save your settings, and your Twilio number will be
+                ready to send and receive messages through the newly configured webhook.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section>
+    <div class="container-main">
+        <div class="col-lg-12 d-flex justify-content-center ">
+            <div class="col-lg-8 text-center mx-auto head-content">
+                <h2> <img src="assets/img/star-icon.png" alt="About Our Company"> Using Ngrok to Establish a Webhook URL
+                </h2>
+                <p class="pt-3">
+                    Ngrok plays a pivotal role in exposing local servers to the internet, which is particularly useful
+                    during development.
+                </p>
+                <span>Here’s how to set it up</span>
+            </div>
+        </div>
+        <div class="container-card">
+            <div class="card">
+                <div class="icon"><img src="../../assets/img/download.png"></div>
+                <div class="heading">DOWNLOAD AND INSTALL NGROK</div>
+                <div class="description">After downloading it from the Ngrok website, you can add it to your system's
+                    PATH or install it via Python with pip install pyngrok.</div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="../../assets/img/validate.png"></div>
+                <div class="heading">AUTHENTICATE</div>
+                <div class="description">Configure your Ngrok using the authentication token found in your Ngrok
+                    dashboard.</div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="../../assets/img/launch.png"></div>
+                <div class="heading">LAUNCH NGROK</div>
+                <div class="description">Start your local server (like Flask running on port 5000) and use Ngrok to
+                    expose it to the internet, which provides a public URL to be used as your webhook.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="business-section">
+    <div class="container-main">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <div class="col-lg-8 text-center mx-auto head-content">
+                <h2>
+                    <img src="assets/img/star-icon.png" alt="About Our Company">
+                    Automating SMS Handling with Twilio, Flask, HubSpot, and OpenAI
+                </h2>
+                <p class="pt-3">
+                    Combining <b>Flask</b> (a micro web framework), <b>Twilio</b>, <b>HubSpot’s CRM capabilities</b>,
+                    and <b>OpenAI’s GPT-4 API</b>, you can create a sophisticated system to handle SMS interactions
+                </p>
+            </div>
+        </div>
+        <div class="container-card">
+            <div class="card">
+                <div class="heading">INCOMING SMS HANDLING</div>
+                <div class="description">
+                    When a customer sends an SMS, Twilio forwards it to a Flask endpoint using the configured webhook.
+                </div>
+            </div>
+            <div class="card">
+                <div class="heading">DATABASE INTEGRATION</div>
+                <div class="description">
+                    The Flask app can log these messages into a MySQL database for record-keeping and further
+                    processing.
+                </div>
+            </div>
+            <div class="card">
+                <div class="heading">HUBSPOT INTEGRATION</div>
+                <div class="description">
+                    Simultaneously, the sender’s information can be used to update or create new contacts and deals in
+                    HubSpot, enhancing CRM efforts.
+                </div>
+            </div>
+            <div class="card">
+                <div class="heading">AI-POWERED RESPONSES</div>
+                <div class="description">
+                    Using OpenAI’s API, Flask can generate intelligent, context-aware responses based on the SMS
+                    content.
+                </div>
+            </div>
+            <div class="card">
+                <div class="heading">REPLYING TO SMS</div>
+                <div class="description">
+                    Finally, Twilio sends these AI-generated responses back to the customer, ensuring a seamless
+                    interaction loop.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section>
+    <div class="container-main">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <div class="mx-auto head-content">
+                <h2>
+                    <img src="assets/img/star-icon.png" alt="About Our Company">
+                    Integrating Twilio with Dialogflow for Enhanced SMS Interactions
+                </h2>
+                <p class="pt-3 pb-3">
+                    For those looking to incorporate AI-driven conversational interfaces, integrating
+                    <strong>Twilio with Google’s Dialogflow</strong> offers a robust solution
+                </p>
+            </div>
+        </div>
+        <div class="challenge-cards main-challenge">
+            <div class="challenge-card">
+                <div class="challenge-number">1</div>
+                <div class="challenge-title">Set Up Google Cloud</div>
+                <div class="challenge-description">Create a service account in Google Cloud Console and download the
+                    JSON key for authentication.</div>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">2</div>
+                <div class="challenge-title">Generate Access Token</div>
+                <div class="challenge-description">Use this key to generate an access token via OAuth 2.0, which will
+                    allow you to interact with Dialogflow’s API.</div>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">3</div>
+                <div class="challenge-title">Configure Dialogflow Intents</div>
+                <div class="challenge-description">In Dialogflow, create and configure intents that will dictate how the
+                    system responds to various user inputs.</div>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number">4</div>
+                <div class="challenge-title">SMS Handling via Twilio</div>
+                <div class="challenge-description">Configure Twilio to forward incoming SMS to your Flask backend, which
+                    then interacts with Dialogflow to process the content and generate appropriate responses.</div>
+            </div>
+        </div>
+    </div>
+</section>

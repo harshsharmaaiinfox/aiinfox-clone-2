@@ -1,0 +1,139 @@
+<section class="page-title-area">
+    <div class="container">
+        <div class="page-title-content" *ngFor="let pageTitle of pageTitleArea;">
+            <h2>{{pageTitle.title}}</h2>
+            <ul>
+                <li><a routerLink="/">Home</a></li>
+                <li>{{pageTitle.title}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="shape-img1"><img src="assets/img/shape/shape1.svg" alt="image"></div>
+    <div class="shape-img2"><img src="assets/img/shape/shape2.png" alt="image"></div>
+    <div class="shape-img3"><img src="assets/img/shape/shape3.png" alt="image"></div>
+</section>
+
+<section class="contact-area pb-100">
+    <div class="container">
+        <div class="section-title mt-4" *ngFor="let sectionTitleContent of sectionTitle;">
+            <span class="sub-title"><img src="assets/img/star-icon.png" alt="Get In Touch"> {{sectionTitleContent.subTitle}}</span>
+            <h2>{{sectionTitleContent.title}}</h2>
+            <p>{{sectionTitleContent.paragraphText}}</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="contact-image" *ngFor="let Image of contactImage;">
+                    <img [src]="Image.img" alt= {{Image.alt}}>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="contact-form">
+                    <form id="contactForm" [formGroup]="contactForm" (ngSubmit)="onSend()">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group mb-3">
+                                    <input type="text" name="name" class="form-control" id="name" formControlName="name" placeholder="Your name">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group mb-3">
+                                    <input type="email" name="email" class="form-control" id="email" formControlName="email" placeholder="Your email address">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-3">
+                                    <input type="text" name="phone_number" class="form-control" id="phone_number" formControlName="phoneNumber" placeholder="Your phone number">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-3">
+                                    <textarea name="message" id="message" class="form-control" cols="30" rows="6" formControlName="message" placeholder="Write your message..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <button type="submit" class="default-btn"><i class="flaticon-tick"></i>Send Message<span></span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-info-area pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="contact-info-box" *ngFor="let InfoBox1 of contactInfoBox1;">
+                    <div class="back-icon">
+                        <i class='{{InfoBox1.icon}}'></i>
+                    </div>
+                    <div class="icon">
+                        <i class='{{InfoBox1.icon}}'></i>
+                    </div>
+                    <h3>{{InfoBox1.title}}</h3>
+                    <p>{{InfoBox1.location}}</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="contact-info-box" *ngFor="let InfoBox4 of contactInfoBox4;">
+                    <div class="back-icon">
+                        <i class='{{InfoBox4.icon}}'></i>
+                    </div>
+                    <div class="icon">
+                        <i class='{{InfoBox4.icon}}'></i>
+                    </div>
+                    <h3>{{InfoBox4.title}}</h3>
+                    <p>{{InfoBox4.location}}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="contact-info-box" *ngFor="let InfoBox5 of contactInfoBox5;">
+                    <div class="back-icon">
+                        <i class='{{InfoBox5.icon}}'></i>
+                    </div>
+                    <div class="icon">
+                        <i class='{{InfoBox5.icon}}'></i>
+                    </div>
+                    <h3>{{InfoBox5.title}}</h3>
+                    <p>{{InfoBox5.location}}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="contact-info-box" *ngFor="let InfoBox2 of contactInfoBox2;">
+                    <div class="back-icon">
+                        <i class='{{InfoBox2.icon}}'></i>
+                    </div>
+                    <div class="icon">
+                        <i class='{{InfoBox2.icon}}'></i>
+                    </div>
+                    <h3>{{InfoBox2.title}}</h3>
+                    <p>Mobile: <a href="tel:{{InfoBox2.number}}">{{InfoBox2.number}}</a></p>
+                    <p>E-mail: <a href="mailto:{{InfoBox2.email}}">{{InfoBox2.email}}</a></p>
+                </div>
+            </div>
+            <!-- <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                <div class="contact-info-box" *ngFor="let InfoBox3 of contactInfoBox3;">
+                    <div class="back-icon">
+                        <i class='{{InfoBox3.icon}}'></i>
+                    </div>
+                    <div class="icon">
+                        <i class='{{InfoBox3.icon}}'></i>
+                    </div>
+                    <h3>{{InfoBox3.title}}</h3>
+                    <p>{{InfoBox3.text1}}</p>
+                    <p>{{InfoBox3.text2}}</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+
+
+<div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6860.659711808146!2d76.688358!3d30.709126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef0b0308c373%3A0x278e99c2f11d8157!2sAiInfox!5e0!3m2!1sen!2sus!4v1720544833691!5m2!1sen!2sus"  ></iframe>
+</div>

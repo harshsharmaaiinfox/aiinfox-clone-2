@@ -1,0 +1,420 @@
+.testimonials-area {
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &.bg-color {
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            height: 267px;
+        }
+    }
+    &.bg-23173a {
+        background-color: var(--blackColor);
+
+        .section-title {
+            h2 {
+                color: var(--whiteColor);
+
+                .overlay {
+                    background-color: var(--whiteColor);
+                }
+            }
+            p {
+                color: var(--whiteColor);
+            }
+        }
+    }
+}
+.single-testimonials-item {
+    margin-bottom: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    padding: 130px 50px 50px;
+    text-align: center;
+
+    p {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: var(--whiteColor);
+        z-index: -1;
+        height: 87%;
+        border-radius: 5px;
+        right: 0;
+    }
+    &::after {
+        content: "\f106";
+        position: absolute;
+        left: 0;
+        color: var(--blackColor);
+        top: -20px;
+        line-height: 1;
+        z-index: -1;
+        right: 0;
+        opacity: .05;
+        font: {
+            family: Flaticon;
+            size: 150px;
+        };
+    }
+    .client-info {
+        margin-top: 25px;
+
+        img {
+            width: 50px !important;
+            height: 50px;
+            display: inline-block !important;
+            border-radius: 50%;
+        }
+        .title {
+            text-align: start;
+            margin-left: 15px;
+
+            h3 {
+                font-size: 18px;
+                margin-bottom: 3px;
+            }
+            span {
+                color: var(--optionalColor);
+                font: {
+                    size: 15px;
+                    weight: 600;
+                };
+            }
+        }
+    }
+}
+.single-testimonials-box {
+    margin-bottom: 30px;
+    background-color: var(--whiteColor);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    padding: 70px 50px 40px;
+    text-align: center;
+    margin-top: 40px;
+
+    &.bg-fafafb {
+        background-color: #fafafb;
+    }
+    img {
+        width: 80px !important;
+        height: 80px;
+        display: inline-block !important;
+        border-radius: 50%;
+        border: 5px solid #e3fbff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -40px;
+        margin: auto;
+    }
+    p {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    &::after {
+        content: "\f106";
+        position: absolute;
+        bottom: 0;
+        color: var(--blackColor);
+        line-height: 1;
+        z-index: -1;
+        right: 20px;
+        opacity: .05;
+        font: {
+            family: Flaticon;
+            size: 140px;
+        };
+    }
+    .client-info {
+        margin-top: 25px;
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        span {
+            color: var(--optionalColor);
+            font: {
+                size: 15px;
+                weight: 600;
+            };
+        }
+    }
+}
+.testimonials-view-btn {
+    margin-top: 25px;
+
+    .default-btn {
+        background-color: transparent;
+        color: var(--mainColor);
+        border: 1px solid #eae1d6;
+        margin-bottom: -7px;
+
+        span {
+            background-color: var(--mainColor);
+        }
+        &:hover {
+            color: var(--whiteColor);
+            border-color: var(--mainColor);
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .testimonials-area {
+        &.bg-f1f8fb {
+            padding-top: 60px;
+        }
+    }
+    .single-testimonials-item {
+        padding: 70px 20px 25px;
+
+        &::after {
+            top: -10px;
+            font-size: 70px;
+        }
+        &::before {
+            height: 95%;
+        }
+        p {
+            font-size: 15.5px;
+        }
+        .client-info {
+            margin-top: 20px;
+
+            .title {
+                h3 {
+                    font-size: 16px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .testimonials-view-btn {
+        margin-top: 15px;
+
+        .default-btn {
+            margin-bottom: -5px;
+        }
+    }
+    .single-testimonials-box {
+        padding: 65px 20px 30px;
+        margin-top: 30px;
+
+        img {
+            border-width: 3px;
+            top: -30px;
+        }
+        p {
+            font-size: 15.5px;
+        }
+        .client-info {
+            margin-top: 20px;
+
+            h3 {
+                font-size: 17px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .testimonials-area {
+        &.bg-f1f8fb {
+            padding-top: 80px;
+        }
+    }
+    .single-testimonials-item {
+        padding: 110px 25px 35px;
+
+        &::before {
+            height: 92%;
+        }
+        p {
+            font-size: 16px;
+        }
+        &::after {
+            top: -15px;
+            font-size: 110px;
+        }
+        .client-info {
+            .title {
+                h3 {
+                    font-size: 17px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .testimonials-view-btn {
+        margin-top: 15px;
+
+        .default-btn {
+            margin-bottom: -5px;
+        }
+    }
+    .single-testimonials-box {
+        padding: 65px 25px 30px;
+
+        p {
+            font-size: 16px;
+        }
+        .client-info {
+            h3 {
+                font-size: 18px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+        &::after {
+            font-size: 75px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+
+h2 {
+    font-size: 28px;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+.container{
+    padding: 70px 0px;
+}
+
+
+.main p {
+    color: #fff;
+}
+
+.left-card {
+    background: linear-gradient(135deg, #AB47BC, #EC407A);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-card h3 {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.left-card p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.profile {
+    gap: 10px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    font-size: 14px;
+}
+
+.profile-info span {
+    display: block;
+    font-weight: bold;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+}
+
+.right-card {
+    background: #4fa0e3;
+    color: #111;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.right-card:nth-child(2) {
+    background: #d175e1;
+}
+
+.right-card h4 {
+    font-size: 17px;
+    opacity: 0.8;
+}
+
+.right-card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-card, .right-column {
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .main{
+        padding: 10px;
+    }
+}

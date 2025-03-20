@@ -1,0 +1,139 @@
+<footer class="{{footerClass}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <a routerLink="/" class="logo"><img src="assets/img/logo.png" alt="logo"></a>
+                    <p>AiInfox is a dedicated team of AI coders, designers, digital marketers and AI developers in Mohali, who are rigorously working to leave a mark in the field of Artificial Intelligence.</p>
+                    <ul class="social-link">
+                        <li><a href="https://www.facebook.com/aiinfox" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                        <li><a href="https://twitter.com/aiinfox" class="d-block twitt" target="_blank"><img src="assets/img/twitter-icon.png" alt="twitter"></a></li>
+                        <li><a href="https://www.instagram.com/aiinfox/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                        <li><a href="https://in.linkedin.com/company/ai-infox" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget pl-5">
+                    <h3>Explore</h3>
+                    <ul class="footer-links-list">
+                        <li><a routerLink="">Home</a></li>
+                        <li><a routerLink="/about-us">About</a></li>
+                        <li><a routerLink="/services">Services</a></li>
+                        <li><a routerLink="/blog">Our Blog</a></li>
+                        <li><a routerLink="/contact-us">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+         
+
+            <div class="col-lg-5 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h3>Address</h3>
+                    <ul class="footer-contact-info">
+                        <li><i class='bx bx-map'></i>US- 5206, Craftsman ST, Johns Creek Georgia, 30097</li>
+                        <li><i class='bx bx-map'></i>India - D-234 , Phase 8B, Industrial Area, Sector 74, SAS Nagar, Punjab 160055</li>
+                        <li><i class='bx bx-map'></i>Canada- 85, Nortonville drive, Scarborough, Ontario M1T 2G9</li>
+                        <li><i class='bx bx-phone-call'></i><a href="tel:+917888513249">+91-7888513249</a></li>
+                        <li><i class='bx bx-envelope'></i><a href="mailto:info&#64;aiinfox.com">info&#64;aiinfox.com</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-area">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <p>© 2025 AiInFox All rights reserved</p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 d-flex justify-content-end">
+                    <a routerLink="/terms-and-conditions" class="cp ms-2">Terms &amp; Conditions</a>&nbsp;&nbsp;|
+                    <a routerLink="/privacy-policy" class="cp ms-2">Privacy Policy</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-map"><img src="assets/img/footer-map.png" alt="image"></div>
+</footer>
+
+<div class="go-top"><i class="flaticon-up"></i></div>
+
+<!-- Floating Icon -->
+<div class="contact-icon" *ngIf="showContactIcon" (click)="toggleContactForm()">
+  <i class="bx bx-message-dots"></i>
+</div>
+
+  
+  <!-- Contact Form Popup -->
+  <div class="popup-overlay" *ngIf="isPopupVisible" (click)="toggleContactForm()"></div>
+  <div class="popup-modal" *ngIf="isPopupVisible">
+    <div class="popup-content">
+      <div class="contact-form">
+        <form id="contactForm" [formGroup]="contactForm" (ngSubmit)="onSend($event)">
+          <div class="row">
+            <div class="col-lg-12 col-md-6">
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  formControlName="name"
+                  placeholder="Your name"
+                />
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-6">
+              <div class="form-group mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  formControlName="email"
+                  placeholder="Your email address"
+                />
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  name="phone_number"
+                  class="form-control"
+                  id="phone_number"
+                  formControlName="phoneNumber"
+                  placeholder="Your phone number"
+                />
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+              <div class="form-group mb-3">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  cols="30"
+                  rows="6"
+                  formControlName="message"
+                  placeholder="Write your message..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+              <button type="submit" class="default-btn">
+                <i class="flaticon-tick"></i>Send Message<span></span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

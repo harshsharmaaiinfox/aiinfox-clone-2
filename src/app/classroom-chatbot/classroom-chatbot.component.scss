@@ -1,0 +1,395 @@
+.container-main {
+    width: 100%;
+    max-width: 1600px; /* Or whatever fixed width you want */
+    margin: auto;
+    padding: 0 15px;
+}
+section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.banner {
+    position: relative;
+    background-image: url(../../assets/img/classroom-chatbot-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+.overlay-text{
+    color: #fff;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 19%); /* Adjust transparency */
+    z-index: 1;
+}
+
+.banner .container-main {
+    position: relative;
+    z-index: 2; /* Keeps content above overlay */
+}
+.banner h1{
+    font-size: 65px;
+    font-weight: 700;
+}
+.banner p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.banner button{
+    background-color: #ED6A13;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #ED6A13 ;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+}
+.banner button:hover{
+    background-color: #ED6A13;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #ED6A13 ;
+    border-radius: 30px;
+}
+.head-content h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.image-card img{
+    border-radius: 10px;
+    border: 1px solid #cecdcd;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+}
+.image-card img:hover{
+    transform: scale(1.05);
+}
+.case-button{
+    background-color: #ED6A13;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #ED6A13 ;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+}
+.case-button:hover{
+    background-color: #ED6A13;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #ED6A13 ;
+    border-radius: 30px;
+}
+.video-col img{
+    border-radius: 10px;
+}
+.icon-home {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #fff;
+    border-radius: 10px;
+}
+.icon-home img {
+    width: 40%;
+}
+section.section-small {
+    background: rgb(239 239 239);
+}
+.section-small h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.icon {
+    font-size: 40px;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.description {
+    font-size: 14px;
+    color: #555;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.business-section{
+    background: #F8F6F4;
+}
+.business-section p{
+    color: #000;
+}
+.problem h2{
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.challenge-cards {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    gap: 20px;
+}
+.challenge-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 30px;
+    width: 20%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.challenge-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+}
+.challenge-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.challenge-description {
+    font-size: 14px;
+    color: #555;
+}
+@media (max-width: 768px) {
+    .challenge-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.challenge-card img {
+    width: 20%;
+}
+.tech-badge {
+    background: white;
+    color: #FF5722;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: 1px solid rgb(212, 211, 211);
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.main-challenge .challenge-number{
+    font-size: 50px;
+}
+.main-challenge .challenge-card{
+    margin-top: 10px !important;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    justify-content: center;
+}
+
+.box {
+    background: #1d9c76;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 14px;
+    color: #d4f5e6;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 22px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.workflow-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .workflow-header {
+    background-color: #fbfbfb;
+    color: #000;
+    backdrop-filter: blur(118px);
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgb(237 237 237);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+
+  .workflow-header h2{
+    color: #000;
+  }
+
+
+  .workflow-header p{
+    color: #000;
+  }
+
+  .workflow-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF5722;
+    margin-bottom: 10px;
+  }
+
+  .workflow-header p {
+    font-size: 16px;
+  }
+
+  .workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .workflow-card {
+    background-color: #fbfbfb;
+    color: #000;
+    backdrop-filter: blur(118px);
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgb(237 237 237);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+
+
+  .workflow-card h3{
+    color: #000;
+  }
+
+  .workflow-card p{
+    color: #000;
+  }
+
+  .workflow-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .workflow-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #FF5722;
+  }
+
+  .workflow-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .workflow-header h2 {
+      font-size: 24px;
+    }
+    .workflow-header p {
+      font-size: 14px;
+    }
+    .challenge-card{
+        width: 100%;
+    }
+    .banner p{
+        font-size: 15px;
+    }
+    .banner h1{
+        font-size: 35px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .workflow-card h3 {
+      font-size: 18px;
+    }
+    .workflow-card p {
+      font-size: 14px;
+    }
+  }
+  .flow h2{
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  
+  .my-tech{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  
+  .tech-box {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 180px;
+    flex: 1;
+}
+.curve img{
+    border-radius: 10px;
+}

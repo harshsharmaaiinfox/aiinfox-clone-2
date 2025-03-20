@@ -1,0 +1,430 @@
+
+.service-content h3
+{
+    margin: 25px 0px 12px 0px;
+}
+.ptb-40 {
+    padding: 40px 0px 0px;
+}
+.single-process-box
+{
+    margin-bottom: 30px;
+  background-color: var(--whiteColor);
+  transition: var(--transition);
+  border: 1px solid #f5f3f2;
+  border-radius: 5px;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.single-process-box:hover
+{
+    border-color: var(--mainColor);
+
+}
+.fact-sec {
+	background: #f8f0e4;
+    padding: 50px 0px;
+}
+.fact-sec img
+{
+    width: 90%;
+}
+h2.briefmi
+{
+font-weight: 700;
+        padding: 20px 0px;
+        font-size: 38px;
+}
+.col-lg-4
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab__content {
+  max-height: 0rem;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.tab input:checked ~ .tab__content {
+  max-height: 11rem;
+}
+.tab input:checked ~ .tab__label {
+    background: #ff5d22;
+    color:#fff;
+    
+  }
+/* Visual styles */
+.accordion {
+  color: #fff;
+  border: 0px solid;
+  border-radius: 0rem;
+  overflow: hidden;
+  border-left:1px solid #000;
+  border-bottom:1px solid #000;
+  border-right:1px solid #000;
+}
+
+
+.tab__label,
+.tab__close {
+    display: flex;
+    color: #020202;
+    background: #fff;
+    cursor: pointer;
+    border-top: 1px solid #000;
+}
+.tab__label {
+  justify-content: space-between;
+  padding: 1rem;
+}
+.tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+.tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+}
+.tab__content p {
+  margin: 0;
+  padding: 1rem;
+  background: #fff;
+}
+.tab__close {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+.accordion--radio {
+  --theme: var(--secondary);
+}
+
+/* Arrow animation */
+.tab input:not(:checked) + .tab__label:hover::after {
+  animation: bounce .5s infinite;
+}
+@keyframes bounce {
+  25% {
+    transform: rotate(90deg) translate(.25rem);
+  }
+  75% {
+    transform: rotate(90deg) translate(-.25rem);
+  }
+}
+@media(max-width: 991px)
+{
+  .mobileorderimg
+  {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mobileorder
+  {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.content-left
+{
+    margin-top: 70px;
+}
+.content-left p
+{
+    font-size: 18px;
+}
+.content-left h1
+{
+font-weight: 700;
+padding:0px 0px 10px;
+font-size: 44px;
+}
+.content-left h3 {
+	margin-top: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 80%;
+  line-height: 27px;
+}
+.btn-primary {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 20px 0px;
+    background: #ff5d22;
+    border:1px solid #ff5d22;
+}
+.content-left li
+{
+  color:#6b6b84;
+  padding: 2px 0px;
+}
+.digital-details img,
+.topleft-img img
+{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.digitalblock ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+.digitalblock li
+{
+    color: #6b6b84;
+    padding: 2px 0px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    list-style-type: none;
+}
+.digitalblock span
+{
+    display: block;
+  border: 1px solid #f0eae2;
+  border-radius: 5px;
+  padding: 20px 20px 20px 60px;
+  position: relative;
+  background-color: var(--whiteColor);
+  transition: var(--transition);
+  position: relative;
+}
+.digitalblock .icon
+{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.digitalblock .icon img
+{
+    width: 70%;
+}
+.digitalblock  h4
+{
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+@media(max-width:600px)
+{
+    .digitalblock li
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.keyfeature-outer
+{
+  padding: 50px 30px;
+  background: #020202;
+  border-radius: 10px;
+}
+.keyfeature {
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+}
+.keyfeature img
+{
+  width: 80px;
+}
+.ppt-40
+{
+  margin: 20px 0px;
+}
+.keyfeature h3
+{
+  margin: 15px 0px;
+}
+
+.tabbed-content {
+  background: #fff;
+  max-width: 100%;
+  padding: 1em;
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs ul {
+  margin: 0;
+  padding: 0 0 1em 0;
+  font-weight: bold;
+
+}
+.tabs ul li {
+  background: #fff;
+  border-left:1px dashed #000;
+}
+.tabs ul li a {
+  padding: 0.5em 1em;
+}
+.tabs ul li a:hover, .tabs ul li a.active {
+ 
+  color: #ff5d22;
+}
+
+.item {
+  margin-bottom: 0px;
+}
+.item::before {
+  cursor: pointer;
+  font-weight: bold;
+  background: #eee;
+  padding: 0.5em;
+  display: block;
+}
+.item.active::before {
+  background: #ff5d22;
+  color: #fff;
+}
+.item.active .item-content {
+  
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media all and (min-width: 800px) {
+  .item.active .item-content {
+    padding-top: 0px;
+  }
+
+  .tabs-side .tabs li {
+    margin-bottom: 0px;
+  }
+  .inner-item
+{
+  padding: 0px;
+
+}
+}
+/* 
+The project specific CSS starts here
+This is the minimum CSS that you will need in order for this to work
+*/
+.tabbed-content .tabs {
+  display: none;
+}
+.tabbed-content .item {
+  min-height: 2em;
+  border-bottom: 1px solid #000;
+}
+.inner-item
+{
+  padding: 20px 10px;
+
+}
+.tabbed-content .item::before {
+  content: attr(data-title);
+}
+.tabbed-content .item .item-content {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+.tabbed-content .item.active .item-content {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+
+@media all and (min-width: 800px) {
+  .tabbed-content .tabs {
+    display: flex;
+  }
+  .tabbed-content .item {
+   
+    border-bottom: 0px solid #000;
+  }
+  .tabbed-content .tabs li {
+    display: inline-block;
+  }
+  .tabbed-content .tabs li a {
+    display: block;
+  }
+  .tabbed-content .item {
+    min-height: 0;
+  }
+  .tabbed-content .item::before {
+    display: none;
+  }
+  .tabbed-content.tabs-side .tabs {
+    width: 30%;
+    
+  }
+  .tabbed-content.tabs-side .tabs li {
+    display: block;
+  }
+  .tabbed-content.tabs-side .item {
+    width:100%;
+
+  }
+  .itemsright-sec
+  {
+    width: 70%;
+  }
+ 
+.inner-item
+{
+  border: 1px solid #000;
+  padding: 30px;
+  border-radius: 10px;
+}
+.inner-item p
+{
+  margin-bottom: 40px;
+}
+.item-content img
+{
+  border: 1px solid #e2e2e2;
+}
+}
+
+.benefits-features {
+	background: #fdf7ee;
+  padding: 70px 0px;
+  margin-top: 80px;
+}
+.benefits-hrms {
+	background: #fff;
+	padding: 30px;
+	border-radius: 15px;
+  box-shadow: 1px 1px 6px #ccc;
+}
+.benefits-hrms li {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.benefits-hrms ul {
+	list-style-type: none;
+  padding: 0;
+	/* margin-bottom: 30px; */
+}
+@media(max-width: 991px)
+{
+ .benefits-features .col-lg-6
+ {
+  margin-bottom: 30px;
+ }
+}

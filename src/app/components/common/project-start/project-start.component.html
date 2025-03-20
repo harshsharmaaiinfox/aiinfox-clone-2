@@ -1,0 +1,407 @@
+ <ng-container *ngIf="section === ''">
+    <section class="project-start-area {{ sectionClass }} ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-image"
+                        *ngFor="let Image of projectStartImage"
+                    >
+                        <img
+                            [src]="Image.img"
+                            data-speed="0.06"
+                            data-revert="true"
+                            alt="{{ Image.alt }}"
+                        />
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-content"
+                        *ngFor="let Content of projectStartContent"
+                    >
+                        <h2>{{ Content.title }}</h2>
+                        <p>{{ Content.paragraphText }}</p>
+                        <a
+                            routerLink="/{{ Content.defaultBtnLink }}"
+                            class="default-btn"
+                            ><i class="{{ Content.defaultBtnIcon }}"></i
+                            >{{ Content.defaultBtnText }}<span></span
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="{{ circleShape1Class }}">
+            <img src="assets/img/shape/circle-shape1.png" alt="AI Values" />
+        </div>
+        <div class="{{ vectorShape3Class }}">
+            <img src="assets/img/shape/vector-shape3.png" alt="AI Values" />
+        </div>
+        <div class="{{ vectorShape9Class }}">
+            <img src="assets/img/shape/vector-shape9.png" alt="AI Values" />
+        </div>
+        <div class="{{ vectorShape10Class }}">
+            <img src="assets/img/shape/vector-shape10.png" alt="AI Values" />
+        </div>
+    </section>
+</ng-container>
+<ng-container *ngIf="section === 'coreValues'">
+    <section class="project-start-area {{ sectionClass }} ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-image"
+                        *ngFor="let Image of projectStartImage"
+                    >
+                        <img
+                            [src]="Image.img"
+                            data-speed="0.06"
+                            data-revert="true"
+                            alt="{{ Image.alt }}"
+                        />
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-content"
+                        *ngFor="let Content of CoreValuesContent"
+                    >
+                        <h2>{{ Content.title }}</h2>
+                        <p>{{ Content.paragraphText }}</p>
+                        <a
+                            routerLink="/{{ Content.defaultBtnLink }}"
+                            class="default-btn"
+                            ><i class="{{ Content.defaultBtnIcon }}"></i
+                            >{{ Content.defaultBtnText }}<span></span
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{ circleShape1Class }}">
+            <img src="assets/img/shape/circle-shape1.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape3Class }}">
+            <img src="assets/img/shape/vector-shape3.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape9Class }}">
+            <img src="assets/img/shape/vector-shape9.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape10Class }}">
+            <img src="assets/img/shape/vector-shape10.png" alt="image" />
+        </div>
+    </section>
+</ng-container>
+
+<ng-container *ngIf="section === 'AiMachineValues'">
+    <section class="project-start-area {{ sectionClass }} ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-image"
+                        *ngFor="let Image of projectStartImage"
+                    >
+                        <img
+                            [src]="Image.img"
+                            data-speed="0.06"
+                            data-revert="true"
+                            alt="{{ Image.alt }}"
+                        />
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-content"
+                        *ngFor="let Content of AiMachineValuesContent"
+                    >
+                        <h2>{{ Content.title }}</h2>
+                        <p>{{ Content.paragraphText }}</p>
+                        <a
+                            routerLink="/{{ Content.defaultBtnLink }}"
+                            class="default-btn"
+                            ><i class="{{ Content.defaultBtnIcon }}"></i
+                            >{{ Content.defaultBtnText }}<span></span
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{ circleShape1Class }}">
+            <img src="assets/img/shape/circle-shape1.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape3Class }}">
+            <img src="assets/img/shape/vector-shape3.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape9Class }}">
+            <img src="assets/img/shape/vector-shape9.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape10Class }}">
+            <img src="assets/img/shape/vector-shape10.png" alt="image" />
+        </div>
+    </section>
+</ng-container>
+
+<ng-container *ngIf="section === 'DigitalValues'">
+    <section class="project-start-area {{ sectionClass }} ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-image"
+                        *ngFor="let Image of projectStartImage"
+                    >
+                        <img
+                            [src]="Image.img"
+                            data-speed="0.06"
+                            data-revert="true"
+                            alt="{{ Image.alt }}"
+                        />
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-content"
+                        *ngFor="let Content of digitalmarketContent"
+                    >
+                        <h2>{{ Content.title }}</h2>
+                        <p>{{ Content.paragraphText }}</p>
+                        <a
+                            routerLink="/{{ Content.defaultBtnLink }}"
+                            class="default-btn"
+                            ><i class="{{ Content.defaultBtnIcon }}"></i
+                            >{{ Content.defaultBtnText }}<span></span
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{ circleShape1Class }}">
+            <img src="assets/img/shape/circle-shape1.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape3Class }}">
+            <img src="assets/img/shape/vector-shape3.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape9Class }}">
+            <img src="assets/img/shape/vector-shape9.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape10Class }}">
+            <img src="assets/img/shape/vector-shape10.png" alt="image" />
+        </div>
+    </section>
+</ng-container>
+
+<ng-container *ngIf="section === 'DesignValues'">
+    <section class="project-start-area {{ sectionClass }} ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-image"
+                        *ngFor="let Image of projectStartImage"
+                    >
+                        <img
+                            [src]="Image.img"
+                            data-speed="0.06"
+                            data-revert="true"
+                            alt="{{ Image.alt }}"
+                        />
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-content"
+                        *ngFor="let Content of webdesignContent"
+                    >
+                        <h2>{{ Content.title }}</h2>
+                        <p [innerHtml]="Content.paragraphText"></p>
+                        <a
+                            routerLink="/{{ Content.defaultBtnLink }}"
+                            class="default-btn"
+                            ><i class="{{ Content.defaultBtnIcon }}"></i
+                            >{{ Content.defaultBtnText }}<span></span
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{ circleShape1Class }}">
+            <img src="assets/img/shape/circle-shape1.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape3Class }}">
+            <img src="assets/img/shape/vector-shape3.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape9Class }}">
+            <img src="assets/img/shape/vector-shape9.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape10Class }}">
+            <img src="assets/img/shape/vector-shape10.png" alt="image" />
+        </div>
+    </section>
+</ng-container>
+<ng-container *ngIf="section === 'DevelopValues'">
+    <section class="project-start-area {{ sectionClass }} ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-image"
+                        *ngFor="let Image of projectStartImage"
+                    >
+                        <img
+                            [src]="Image.img"
+                            data-speed="0.06"
+                            data-revert="true"
+                            alt="{{ Image.alt }}"
+                        />
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-content"
+                        *ngFor="let Content of webdevelopContent"
+                    >
+                        <h2>{{ Content.title }}</h2>
+                        <p [innerHtml]="Content.paragraphText"></p>
+                        <a
+                            routerLink="/{{ Content.defaultBtnLink }}"
+                            class="default-btn"
+                            ><i class="{{ Content.defaultBtnIcon }}"></i
+                            >{{ Content.defaultBtnText }}<span></span
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{ circleShape1Class }}">
+            <img src="assets/img/shape/circle-shape1.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape3Class }}">
+            <img src="assets/img/shape/vector-shape3.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape9Class }}">
+            <img src="assets/img/shape/vector-shape9.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape10Class }}">
+            <img src="assets/img/shape/vector-shape10.png" alt="image" />
+        </div>
+    </section>
+</ng-container>
+
+<ng-container *ngIf="section === 'MobileValues'">
+    <section class="project-start-area {{ sectionClass }} ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-image"
+                        *ngFor="let Image of projectStartImage"
+                    >
+                        <img
+                            [src]="Image.img"
+                            data-speed="0.06"
+                            data-revert="true"
+                            alt="{{ Image.alt }}"
+                        />
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="project-start-content"
+                        *ngFor="let Content of mobileappContent"
+                    >
+                        <h2>{{ Content.title }}</h2>
+                        <p>{{ Content.paragraphText }}</p>
+                        <a
+                            routerLink="/{{ Content.defaultBtnLink }}"
+                            class="default-btn"
+                            ><i class="{{ Content.defaultBtnIcon }}"></i
+                            >{{ Content.defaultBtnText }}<span></span
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{ circleShape1Class }}">
+            <img src="assets/img/shape/circle-shape1.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape3Class }}">
+            <img src="assets/img/shape/vector-shape3.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape9Class }}">
+            <img src="assets/img/shape/vector-shape9.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape10Class }}">
+            <img src="assets/img/shape/vector-shape10.png" alt="image" />
+        </div>
+    </section>
+</ng-container>
+
+
+<ng-container *ngIf="section === 'takeTheFirstStep'">
+    <section class="project-start-area {{ sectionClass }} ptb-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-12">
+                    <div
+                        class="project-start-content"
+                        *ngFor="let Content of takeTheFirstStepContent"
+                    >
+                        <h2>{{ Content.title }}</h2>
+                        <h3 class="mt-2">
+                            Begin your no-commitment, <b>1-week trial today.</b>
+                        </h3>
+                        <!-- <a class="default-btn fontbtnlarge mt-3"  href="javascript:void(0)" (click)="onClickTrial()"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a> -->
+                        <button
+                            type="submit"
+                            class="default-btn con-btn btn-lg me-3 fontbtnlarge text-center"
+                            (click)="onClickTrial()"
+                        >
+                            <i class="{{ Content.defaultBtnIcon }}"></i
+                            ><i class="{{ Content.defaultBtnIcon }}"></i
+                            >{{ Content.defaultBtnText }}<span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div
+                        class="project-start-image"
+                        *ngFor="let Image of projectStartImage"
+                    >
+                        <img
+                            [src]="Image.img"
+                            data-revert="true"
+                            alt="{{ Image.alt }}"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{ circleShape1Class }}">
+            <img src="assets/img/shape/circle-shape1.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape3Class }}">
+            <img src="assets/img/shape/vector-shape3.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape9Class }}">
+            <img src="assets/img/shape/vector-shape9.png" alt="image" />
+        </div>
+        <div class="{{ vectorShape10Class }}">
+            <img src="assets/img/shape/vector-shape10.png" alt="image" />
+        </div>
+    </section>
+</ng-container> 
+
+
+

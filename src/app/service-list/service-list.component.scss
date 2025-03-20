@@ -1,0 +1,124 @@
+.services-container {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service {
+    background: #1f1f1f;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .service-header img {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .popular-badge {
+    background: yellow;
+    color: black;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #9e9e9e69;
+    padding-bottom: 20px;
+}
+  .service-three{
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  
+  .head h2{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 38px;
+    font-weight: 700;
+  }
+  .head p{
+    padding-bottom:50px;
+  }
+  .sub-title{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: var(--mainColor);
+    font-weight: 700;
+    font-size: 15px;
+  }
+  img.service-img {
+    margin-right: 20px;
+    width: 40px;
+}
+.service-three .col-lg-5 span {
+  font-size: 22px;
+  font-weight: 600;
+}
+.end{
+  border: none;
+}
+.start{
+  border-top: 1px solid  #9e9e9e69 !important;
+}
+@media(max-width:1000px){
+  .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(158, 158, 158, 0.4117647059);
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+.service-three .col-lg-2 span{
+  font-size: 15px;
+}
+}
+.service-section{
+  position: relative;
+  background: #fffbf5;
+  z-index: -9;
+}
+.col-lg-2 span {
+  font-size: 22px !important;
+}
+.col-lg-5 p {
+  font-size: 16px;
+}

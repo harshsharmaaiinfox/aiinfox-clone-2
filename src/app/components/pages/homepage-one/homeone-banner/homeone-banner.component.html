@@ -1,0 +1,39 @@
+<!-- <div class="main-banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <div class="main-banner-content" *ngFor="let Content of mainBannerContent;">
+                    <h1 class="wow animate__animated animate__fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.title}}</h1>
+                    <p class="wow animate__animated animate__fadeInLeft" data-wow-delay="100ms" data-wow-duration="1000ms" [innerHtml]="Content.paragraphText"></p>
+                    <div class="btn-box">
+                        <a routerLink="/{{Content.defaultBtnLink}}" class="default-btn wow animate__animated animate__fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-12">
+                <div class="main-banner-animation-image">
+                    <img src="assets/img/main-banner/banner-one/banner-new.png" alt="AI Development Company in Mohali">
+                    
+                    <img src="assets/img/main-banner/banner-one/banner-new.png" alt="AI Development Company in Mohali">
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="main-banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 banner">
+                <div class="main-banner-content col-lg-6 text-white" *ngFor="let Content of mainBannerContent;">
+                    <h1 class="wow animate__animated animate__fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">{{Content.title}}</h1>
+                    <p class="wow animate__animated animate__fadeInLeft" data-wow-delay="100ms" data-wow-duration="1000ms" [innerHtml]="Content.paragraphText"></p>
+                    <div class="btn-box">
+                        <a routerLink="/{{Content.defaultBtnLink}}" class="default-btn wow animate__animated animate__fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

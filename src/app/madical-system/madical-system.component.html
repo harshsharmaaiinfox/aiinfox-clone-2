@@ -1,0 +1,204 @@
+<section class="banner">
+    <div class="container-main">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center flex-column align-items-start my-voice">
+                <h1>WHAT IS AN AI-POWERED <span>MEDICAL</span> INQUIRY <span>SYSTEM?</span></h1>
+                <p>This AI-powered medical inquiry system demonstrates how specialized agents can collaborate to handle complex user queries effectively. By leveraging state-of-the-art AI models and a well-architected workflow, the system provides accurate, context-aware responses to users' medical inquiries.                </p>
+                <button class="case-button">Get Started</button>
+            </div>
+            <div class="col-lg-6">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="business-section">
+    <div class="container-main">
+        <div class="col-lg-12 d-flex justify-content-center ">
+            <div class="col-lg-8 text-center mx-auto head-content">   
+             <h2> <img src="assets/img/star-icon.png" alt="About Our Company">System Overview</h2>
+             <p class="pt-3">
+                The system is structured around several specialized agents, each responsible for handling a distinct type of inquiry.
+             </p>
+            </div>
+         </div>
+       <div class="container-card">
+        <div class="card">
+            <div class="icon"><img src="../../assets/img/corporate.png"></div>
+            <div class="heading">Department Agent</div>
+            <div class="description">Discusses specific medical departments.</div>
+        </div>
+        <div class="card">
+            <div class="icon"><img src="../../assets/img/hospital.png"></div>
+            <div class="heading">Hospital Agent</div>
+            <div class="description">Offers details about hospitals.</div>
+        </div>
+        <div class="card">
+            <div class="icon"><img src="../../assets/img/call-center-agent.png"></div>
+            <div class="heading">Greeting Agent</div>
+            <div class="description">Manages greetings and goodbyes.</div>
+        </div>
+        <div class="card">
+            <div class="icon"><img src="../../assets/img/heart.png"></div>
+            <div class="heading">Medicine Agent</div>
+            <div class="description">Provides information about specific medicines.</div>
+        </div>
+       </div>
+       <div class="col-lg-8 m-auto text-center mt-2">
+        <p>Additionally, a User Proxy agent handles initial user inputs, and an Operator Agent routes queries to the appropriate specialized agent based on the content of the user's message.</p>
+       </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container-main">
+
+        <div class="col-lg-8 text-center mx-auto head-content">   
+            <h2> <img src="assets/img/star-icon.png" alt="About Our Company">Technical Setup</h2>
+            <p class="pt-3">
+                The implementation uses Python with several libraries
+            </p>
+           </div>
+        <div class="row">
+            <div class="col-lg-7 d-flex flex-column justify-content-center text-left">
+               <div class="top mb-3">
+                <h3> <img src="../../assets/img/langgraph.png"> LangGraph</h3>
+                <p>LangGraph for constructing a state graph that orchestrates the flow of conversation through different states and agents.</p>
+               </div>
+
+                <div class="top mb-3">
+                    <h3> <img src="../../assets/img/typing-main.png"> Typing & Operator</h3>
+                <p>Typing and Operator for defining types and functions that help manage the system’s state.</p>
+                </div>
+
+                <div class="top mb-3">
+                    <h3> <img src="../../assets/img/langchain.png"> LangChain</h3>
+                <p>LangChain for building the AI chat model and managing the flow between different agents.</p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="../../assets/img/tech-img.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="business-section">
+    <div class="container-main">
+        <div class="col-lg-9 m-auto text-center bottom-d">
+            <h2> <img src="assets/img/star-icon.png" alt="About Our Company"> Creating The Agent</h2>
+            <p>Each agent is created using the create_agent function, which sets up a LangChain LLMChain with a specific prompt template. This template instructs the agent on how to respond based on the tools available to it. The agents use predefined tools (greeting_tool, medicine_tool, hospital_tool, department_tool) that are annotated with the &amp;tool decorator to handle specific types of content.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container-main problem">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-2"> <img src="assets/img/star-icon.png" alt="About Our Company"> Workflow Design</h2>
+                <h4 class="mb-3">
+                    The system workflow is defined using a StateGraph from the LangGraph library. The workflow includes
+                </h4>
+                <P><b>User Proxy</b> to receive initial inputs.</P>
+                <p><B>Operator Agent</B> to analyze the input and determine the appropriate specialized agent to handle the query.</p>
+                <p><b>Specialized Agents</b> to handle specific queries as determined by the Operator.</p>
+                <p><b>Final Response Agent</b> to compile and finalize the response before it is returned to the user.</p>
+            </div>
+            <div class="col-lg-6 curve  d-flex justify-content-center align-items-center">
+                <img src="../../assets/img/workflow.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section>
+    <div class="container-main problem">
+        <div class="row align-items-center  flex-row-reverse">
+            <div class="col-lg-6">
+                <h2 class="mb-2"> <img src="assets/img/star-icon.png" alt="About Our Company"> Execution Flow</h2>
+                <P><b>User Input Handling</b> Initial messages from users are captured by the User Proxy agent.                </P>
+                <p><b>Routing Logic</b> The Operator Agent examines the content of the user's message and decides which specialized agent should take over based on the message’s content.</p>
+                <p><b>Query Processing</b> The selected specialized agent processes the query using its assigned tools and constructs a response.</p>
+                <p><b>Final Compilation</b> The Final Response Agent collects responses from the specialized agents and formats them for delivery to the user.
+                </p>
+            </div>
+            <div class="col-lg-6 curve  d-flex justify-content-center align-items-center">
+                <img src="../../assets/img/flowgram.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="business-section">
+    <div class="container-main problem">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6">
+                <h2 class="mb-2"> <img src="assets/img/star-icon.png" alt="About Our Company">System Workflow Diagram</h2>
+                <P> The diagram below illustrates the AI-powered system workflow, starting from the user input and routing through 
+                    specialized agents before generating the final response. Each query is processed by the appropriate agent, ensuring 
+                    accurate and efficient handling of medical inquiries.</P>
+            </div>
+            <div class="col-lg-6 curve d-flex justify-content-center align-items-center">
+                <img src="../../assets/img/workflow-main.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container-main">
+        <div class="col-lg-12 d-flex justify-content-center ">
+            <div class="mx-auto head-content">   
+             <h2> <img src="assets/img/star-icon.png" alt="About Our Company"> Challenges & Solutions</h2>
+             <p class="pt-3">
+                As a matter of fact, the diversification of operational bottlenecks and fragmented workflows posed a critical hindrance to the seamless execution of the solution, thereby necessitating a strategic alignment to overcome functional discrepancies and deliver optimal performance.
+             </p>
+            </div>
+         </div>
+         <div class="challenge-cards">
+            <div class="challenge-card">
+                <div class="challenge-number"><img src="../../assets/img/icon-c-1.png"></div>
+                <div class="challenge-title mt-2">Complexity In Routing</div>
+                <div class="challenge-description">Determining the appropriate agent for a given query can be complex. This was addressed by designing a robust Operator Agent that uses patterns and keywords to route the query accurately.</div>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number"><img src="../../assets/img/ai-tool.png"></div>
+                <div class="challenge-title mt-2">integration Of Multiple Tools</div>
+                <div class="challenge-description">Each agent might need to interact with multiple tools; managing these interactions required careful planning and testing to ensure seamless operation.</div>
+            </div>
+            <div class="challenge-card">
+                <div class="challenge-number"><img src="../../assets/img/icon-c-3.png"></div>
+                <div class="challenge-title mt-2">Maintaining Converstion Context</div>
+                <div class="challenge-description">It was crucial to preserve the state across different agents. This was achieved by passing the entire conversation history to each agent, allowing them to maintain the context of the interaction.</div>
+            </div>
+    </div>
+    </div>
+</section>
+
+
+
+<section class="business-section">
+    <div class="container-main">
+        <div class="col-lg-9 m-auto text-center bottom-d">
+            <h2> <img src="assets/img/star-icon.png" alt="About Our Company"> Conclusion</h2>
+            <p>This AI-powered medical inquiry system demonstrates how specialized agents can collaborate to handle complex user queries effectively. By leveraging state-of-the-art AI models and a well-architected workflow, the system provides accurate, context-aware responses to users' medical inquiries. This case study illustrates the potential of AI in transforming customer service operations, particularly in sectors where accuracy and speed are crucial, like the medical field.</p>
+            <p>This implementation serves as a blueprint for similar systems across different industries, showcasing a scalable and efficient approach to managing customer interactions with AI.</p>
+        </div>
+    </div>
+</section>

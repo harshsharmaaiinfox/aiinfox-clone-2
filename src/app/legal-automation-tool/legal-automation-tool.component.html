@@ -1,0 +1,116 @@
+<section class="banner">
+    <div class="overlay"></div>
+    <div class="container-main">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center flex-column align-items-start">
+                <h1 class="overlay-text">WHAT IS AN LEGAL INFORMATION AI AUTOMATION TOOL?</h1>
+                <p>AI Automation Tool for Legal Information is a smart solution designed to streamline legal processes by automating tasks such as document review, legal research, and contract analysis. Using advanced AI technologies, it quickly processes large volumes of legal data, offering accurate insights and reducing the time spent on manual tasks. This tool helps legal professionals enhance efficiency, improve accuracy, and focus on higher-level strategic work.s.</p>
+                <button class="case-button">Get Started</button>
+            </div>
+            <div class="col-lg-6">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container-main problem">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-2"> <img src="assets/img/star-icon.png" alt="About Our Company"> Project Overview</h2>
+                <P>In the realm of legal services, quick and accurate access to specific laws and regulations is paramount.</P>
+                <p>This case study explores the integration of advanced AI technologies to automate and refine the retrieval of information regarding California Penal Codes.</p>
+                <p>By utilizing AI models from OpenAI and Perplexity AI, we've developed a solution that enhances the precision of legal information extraction through a systematic approach to querying penal codes.</p>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <img src="../../assets/img/overview-p.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="business-section">
+    <div class="container-main">
+       
+        <div class="main-container mt-4">
+            <div class="card-wrapper">
+        
+              <div class="info-card">
+                <div class="card-header">Integration of AI Models for Legal Queriest</div>
+                <P>The core functionality revolves around querying detailed explanations and descriptions of California Penal Codes using two distinct AI models</P>
+                <div class="label-heading">● OpenAI’s GPT Model</div>
+                <div class="label-description">Utilized for generating both short and detailed explanations of penal codes. This model is renowned for its ability to generate coherent and contextually relevant text based on prompts.</div>
+                <div class="label-heading">● Perplexity AI</div>
+                <div class="label-description">This model offers an interface specifically tuned for detailed legal and technical explanations, providing citations that are invaluable for legal professionals.</div>
+              </div>
+        
+              <div class="info-card">
+                <div class="card-header">Setting Up The Enviroment</div>
+                <P>Our project begins with setting up the necessary Python environment, which involves importing several key libraries</P>
+                <div class="label-heading">● Openai</div>
+                <div class="label-description">for accessing OpenAI’s powerful language models.</div>
+                <div class="label-heading">● Pandas</div>
+                <div class="label-description">for handling data in a structured format.</div>
+                <div class="label-heading">● Requests</div>
+                <div class="label-description">for making HTTP requests to external APIs.</div>
+                <div class="label-heading">● Yaml and Pickle</div>
+                <div class="label-description">for configuration management and data serialization, respectively.</div>
+                <div class="label-heading">● dotenv</div>
+                <div class="label-description">for managing environment variables securely.</div>
+              </div>
+        
+            </div>
+          </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-main">
+        <div class="col-lg-8 text-center mx-auto head-content">
+            <h2> <img src="assets/img/star-icon.png" alt="About Our Company"> Workflow Diagrams</h2>
+            <p class="pt-3">
+                The Workflow Diagram illustrates the end-to-end process of legal information extraction using AI. It outlines key steps such as configuration setup, data retrieval, AI-powered query execution, and result storage—ensuring efficient, structured, and accurate legal data processing.
+            </p>
+        </div>
+        <div class="workflow-container mt-4">
+            <div class="workflow-grid">
+              <div class="workflow-step">
+                <h3><b>Configuration Loading</b></h3>
+                <p>We begin by loading configurations from a <strong>yaml</strong> file, which includes URLs for input data and output paths for the results.</p>
+              </div>
+        
+              <div class="workflow-step">
+                <h3><B>Data Retrieval and Processing</B></h3>
+                <p>Using <strong>pandas</strong>, we retrieve penal code data from an Excel file, limiting our initial pull to the first five entries to streamline processing during development.</p>
+              </div>
+        
+              <div class="workflow-step">
+                <h3><B>AI-Powered Query Execution</B></h3>
+                <ul>
+                  <li>We first check if descriptions already exist to avoid redundant processing.</li>
+                  <li>We then invoke both the OpenAI and Perplexity AI models to fetch the required legal descriptions.</li>
+                  <li>Responses are categorized based on their success or failure to fetch relevant data, which is critical for handling queries that may refer to non-existent penal codes.</li>
+                </ul>
+              </div>
+        
+              <div class="workflow-step">
+                <h3><B>Result Storage and Serialization</B></h3>
+                <p>Successfully retrieved data and failures are serialized into separate <strong>pickle</strong> files for later use, ensuring that results are stored in a manner that facilitates easy access and analysis.</p>
+              </div>
+        
+              <div class="workflow-step">
+                <h3><b>Result Storage and Serialization</b></h3>
+                <p>Using the <strong>requests</strong> library, we craft HTTP requests to the Perplexity AI API with specific parameters tailored to legal inquiries, such as:</p>
+                <ul>
+                  <li>Setting a high max_tokens value to ensure comprehensive responses.</li>
+                  <li>Enabling return_citations to provide legal references that enhance the utility of the information retrieved.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+

@@ -1,0 +1,186 @@
+<section class="banner">
+    <div class="overlay"></div> <!-- Overlay div -->
+    <div class="container-main">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center flex-column align-items-start my-voice">
+                <h1>WHAT IS AN <span>AI</span> POWERED VOICE <span>AGENT?</span></h1>
+                <p>The challenge of delivering exceptional customer service in the home improvement industry involves not only understanding and responding to customer needs accurately but also managing and routing calls efficiently. This case study details the innovative integration of Twilio, Retell, and AI (via an LLM) to create a seamless communication loop that enhances customer interaction and optimizes call handling for "One Eight Hundred Remodel."</p>
+                <button class="case-button">Get Started</button>
+            </div>
+            <div class="col-lg-6">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="business-section">
+    <div class="container-main">
+        <div class="col-lg-12 d-flex justify-content-center ">
+            <div class="col-lg-8 text-center mx-auto head-content">   
+             <h2> <img src="assets/img/star-icon.png" alt="About Our Company">System Architecture</h2>
+             <p class="pt-3">
+                The system architecture was designed to harness the strengths of each component
+             </p>
+            </div>
+         </div>
+       <div class="container-card">
+        <div class="card">
+            <div class="icon"><img src="../../assets/img/twillio.png"></div>
+            <div class="heading">TWILIO</div>
+            <div class="description">Initiates and manages both incoming and outgoing calls, serving as the primary interface for customer interactions.</div>
+        </div>
+        <div class="card">
+            <div class="icon"><img src="../../assets/img/retell.png"></div>
+            <div class="heading">RETELL</div>
+            <div class="description">Acts as a bridge between Twilio and the AI system, managing call transfers and providing advanced call analytics.</div>
+        </div>
+        <div class="card">
+            <div class="icon"><img src="../../assets/img/icon-main-3.png"></div>
+            <div class="heading">LLM (LANGUAGE LEARNING MODEL)</div>
+            <div class="description">Utilizes OpenAI's capabilities to analyze customer queries and generate intelligent responses.</div>
+        </div>
+        <div class="card">
+            <div class="icon"><img src="../../assets/img/flask.png"></div>
+            <div class="heading">FLASK WEB FRAMEWORK</div>
+            <div class="description">Coordinates the flow between Twilio, Retell, and the AI, managing data and request handling.</div>
+        </div>
+       </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container-main problem">
+        <div class="col-lg-12 d-flex justify-content-center ">
+            <div class="col-lg-8 text-center mx-auto head-content">   
+             <h2> <img src="assets/img/star-icon.png" alt="About Our Company">Technical Challenges And Solutions</h2>
+             <p class="pb-2">This explores the key technical challenges encountered during the project and the innovative solutions implemented to overcome them, including issues like system integration, scalability, and accuracy, along with strategies to enhance performance and efficiency.</p>
+            </div>
+         </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-2"> <img src="assets/img/star-icon.png" alt="About Our Company"> Intelligent Call Routine</h2>
+                <h4>
+                    Challenge
+                </h4>
+                <P>Ensuring that calls were routed accurately and efficiently based on AI recommendations.</P>
+                <h4>Solution</h4>
+                <p>Retell was used to enhance the decision-making process by providing a layer where call data could be analyzed and routed according to the AI’s instructions, ensuring that customers were quickly connected to the most appropriate service providers.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="../../assets/img/call.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="business-section">
+    <div class="container-main problem">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6">
+                <h2 class="mb-2"> <img src="assets/img/star-icon.png" alt="About Our Company">Real-Time Data handling</h2>
+                <h4>
+                    Challenge
+                </h4>
+                <P>Managing real-time data flow between Twilio, Retell, and the AI system without delays.</P>
+                <h4>Solution</h4>
+                <p>Optimized data handling procedures in Flask to ensure quick processing and transfer of data between systems, minimizing latency and improving response times to customer queries.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="../../assets/img/data-handle.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container-main problem">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-2"> <img src="assets/img/star-icon.png" alt="About Our Company">Ensuring seamless Transitions</h2>
+                <h4>
+                    Challenge
+                </h4>
+                <P>Maintaining customer engagement during transfers between different systems.</P>
+                <h4>Solution</h4>
+                <p>Implemented smooth transition protocols within Twilio and Retell to ensure that customers experienced no noticeable delays or disconnections when being transferred to service providers.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="../../assets/img/transition.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="business-section">
+    <div class="container-main">
+
+        <div class="head flow text-center pb-4">
+            <h2>Workflow Description</h2>
+            <p>The workflow of the integrated system is divided into several key stages</p>
+        </div>
+        <div class="workflow-container">
+            <div class="workflow-header text-center">
+              <h2>Call Initiation</h2>
+              <p>Customers call the service number managed by Twilio, which handles the initial connection.</p>
+            </div>
+        
+            <div class="workflow-grid">
+              <div class="workflow-card text-center">
+                <h3>Interaction with Retell</h3>
+                <p>Twilio forwards the call to Retell agents, who are responsible for the initial call management and data collection. Retell records the call details and prepares the data for AI processing.
+              </div>
+        
+              <div class="workflow-card text-center">
+                <h3>Query Analysis and Response Generation</h3>
+                <p>Retell sends the collected data to the LLM system, which processes the customer's queries. The AI analyzes the content, generates responses, and determines if a service provider needs to be contacted.                </p>
+              </div>
+        
+              <div class="workflow-card text-center">
+                <h3>Response and Call Routing</h3>
+                <p>The AI's response is sent back to Retell, which then instructs Twilio to convey the AI-generated answer to the customer or to transfer the call to the appropriate service provider based on the AI’s recommendation.
+                </p>
+              </div>
+        
+              <div class="workflow-card text-center">
+                <h3>Final Call Transfer</h3>
+                <p>If the AI determines that the call should be transferred (e.g., to a local contractor or service specialist), Twilio handles the transfer, connecting the customer with the service provider for detailed project discussions or quote finalization.
+                </p>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+
+<section >
+    <div class="container-main problem">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-2"> <img src="assets/img/star-icon.png" alt="About Our Company">Outcomes</h2>
+                <h4>
+                    This integrated system significantly enhanced the efficiency of customer service operations for "One Eight Hundred Remodel.
+                </h4>
+                <P>By leveraging AI for intelligent response generation and utilizing Retell for sophisticated call management and analytics, the company was able to provide faster, more accurate customer service. Furthermore, the seamless integration with Twilio ensured that customers experienced a smooth service from initial contact through to final provider connection.                </P>
+               
+            </div>
+            <div class="col-lg-6">
+                <img src="../../assets/img/outcome.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="business-section">
+    <div class="container-main">
+        <div class="col-lg-9 m-auto text-center bottom-d">
+            <h2> <img src="assets/img/star-icon.png" alt="About Our Company"> Conclusion</h2>
+            <p>The integration of Twilio, Retell, and AI into the customer service workflow of a home improvement concierge service demonstrates a forward-thinking approach to solving traditional business challenges.</p>
+            <p>This case study highlights the potential of combining telecommunications technology with artificial intelligence to streamline operations, enhance customer satisfaction, and drive business growth.</p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,6 @@
+<app-preloader></app-preloader>
+<app-navbar ngSkipHydration *ngIf="!isLandingPage"></app-navbar>
+<app-landingnavbar *ngIf="isLandingPage"></app-landingnavbar>
+<router-outlet></router-outlet>
+<app-footer *ngIf="!isLandingPage"></app-footer>
+<app-landingfoo *ngIf="isLandingPage"></app-landingfoo>
