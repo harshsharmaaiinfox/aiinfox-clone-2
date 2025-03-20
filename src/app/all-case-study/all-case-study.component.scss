@@ -1,6 +1,8 @@
-.container-main{
-    width: 80%;
-    margin:auto;
+.container-main {
+    width: 100%;
+    max-width: 1600px; /* Or whatever fixed width you want */
+    margin: auto;
+    padding: 0 15px;
 }
 section{
     padding-top: 60px;
